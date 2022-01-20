@@ -2,9 +2,9 @@ import { ITheme } from "./interfaces";
 
 export const lightTheme: ITheme = {
   bgColor: "#fff",
-  buttonPrimaryColor: "#248aff",
+  buttonPrimaryColor: "#00b968",
   textColor: "grey",
-  highlightTextColor: "#36e2b2",
+  highlightTextColor: "#00b968",
   titleColor: "#000",
   projectDescColor: "#484848",
   tooltipColor: "#fff",
@@ -14,10 +14,10 @@ export const lightTheme: ITheme = {
 export const darkTheme: ITheme = {
   bgColor: "#111",
   buttonColor: "rgba(255,255,255,0.02)",
-  buttonPrimaryColor: "#248aff",
+  buttonPrimaryColor: "#00b968",
   buttonHoverColor: "hsla(0,0%,100%,0.06)",
   buttonHoverTextColor: "#fff",
-  highlightTextColor: "#36e2b2",
+  highlightTextColor: "#00b968",
   headerTextColor: "#fff",
   textColor: "hsla(0,0%,100%,0.4)",
   paragraphTextColor: "hsla(0,0%,100%,0.4)",

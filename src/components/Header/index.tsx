@@ -8,7 +8,7 @@ const Header: FC = () => {
   return (
     <S.Container>
       <S.LinkGroup>
-        {["About", "Contact", "Blog"].map((link, i) => (
+        {["About", "Project", "Contact"].map((link, i) => (
           <S.ListItem
             key={[link, i].join(".")}
             onClick={(_e) => scrollTo(link.toLowerCase())}

@@ -10,33 +10,41 @@ import {
 import { IApp } from "./interfaces";
 
 const app: IApp = {
-  title: "Stanley Akpama",
-  desc: "Stanlee's Porfolio and Resume",
+  title: "Ufuoma Oghenechovwe",
+  desc: "Rukkie's Porfolio and Resume",
   hero: {
     tag: "hero",
-    name: "Stanley Akpama",
-    catchPhrase: "10x",
-    tagLine: "Mobile And Frontend Developer",
+    name: "Ufuoma Oghenechovwe",
+    catchPhrase: "Rukkie",
+    text: "I'm",
+    greeting: "Hello there",
+    desc: "| Front-end developer |",
   },
   about: {
     tag: "about",
-    name: "Stanley",
-    bio: "I'm a blah blah blah blah blah blah, I've 3 years of experience working with modern mobile and web technologies. I'm a builder at heart, I co-founded and lead product for <a  href='https://kivifood.app'>kivifood</a>, an on-demand food delivery startup. I've learnt so much from the community so i'm trying to give back in any way i can, I currently mentor at <a href='https://andela.com/learning-community/'>Andela learning community</a> and do open-source at <a href='https://github.com/iamstanlee'>Github</a>.",
+    name: "Ufuoma",
+    bio: "I'm a , I've 2 years of experience working with modern web technologies, I love watching movies and animes.\n I'm currently looking for a full-time opportunity/gig as a frontend developer.",
+   //  email: "rukkiechowe@gmail.com",
+   //  resumeUrl: "/assets/resume.pdf",
     skills: [
       {
         title: "I'm proficient and actively working with",
         list: [
           {
             name: "language",
-            data: ["javascript", "typescript", "dart"],
-          },
-          {
-            name: "mobile",
-            data: ["flutter", "react-native"],
+            data: ["javascript", "typescript"],
           },
           {
             name: "frontend",
-            data: ["reactjs", "nextjs", "recoiljs", "jotai", "redux"],
+            data: ["reactjs", "nextjs"],
+          },
+         //  {
+         //    name: "mobile",
+         //    data: ["flutter", "react-native", "jetpack-compose"],
+         //  },
+          {
+            name: "state-management",
+            data: [ "vuex", "redux"],
           },
           {
             name: "styling",
@@ -55,8 +63,8 @@ const app: IApp = {
             ],
           },
           {
-            name: "Others",
-            data: ["REST API", "graphql", "firebase", "GCP"],
+            name: "database",
+            data: [ "firebase", "graphql"],
           },
         ],
       },
@@ -94,7 +102,7 @@ const app: IApp = {
     projects: [
       {
         title: "kivifood",
-        tags: ["mobile", "web"],
+        tags: ["web"],
         desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
         links: [
           {
@@ -102,47 +110,10 @@ const app: IApp = {
             url: "https:kivifood.app",
             tooltip: "View the web",
           },
-          {
-            icon: <GooglePlayLogo size={24} />,
-            url: "https://play.google.com/store/apps/details?id=com.kivifood.app",
-            tooltip: "View on playstore",
-          },
-          {
-            icon: <AppStoreLogo size={24} />,
-            url: "https://apps.apple.com/us/app/kivi-food/id1588631598",
-            tooltip: "View on appstore",
-          },
         ],
       },
-      {
-        title: "Dokto",
-        tags: ["web"],
-        desc: "Dokto is a global Telehealth service that gives patients the opportunity to connect with licensed doctors, therapists, practitioners and specialists for on-demand, online medical consultations.",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://dokto.com",
-            tooltip: "View the web",
-          },
-        ],
-      },
-      {
-        title: "MV Player",
-        tags: ["mobile"],
-        desc: "MV Player is a video and audio media player application that support multiple file extensions. mp3, mp4, mpv etc.",
-        links: [
-          {
-            icon: <GooglePlayLogo size={24} />,
-            url: "https://play.google.com/store/apps/details?id=com.stanlee.mvplayer",
-            tooltip: "View on playstore",
-          },
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/Iamstanlee/MV-Player",
-            tooltip: "View on github",
-          },
-        ],
-      },
+    
+     
 
       {
         title: "lastprice",
@@ -158,6 +129,40 @@ const app: IApp = {
           {
             icon: <GithubLogo size={24} />,
             url: "https://github.com/iamstanlee/last-price",
+            tooltip: "View on github",
+          },
+        ],
+      },
+      {
+        title: "Icompresser",
+        tags: ["web"],
+        desc: "Icompresser is a website to compress and convert images of different sizes and format.",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.icompresser.com/",
+            tooltip: "View the web",
+          },
+          //  {
+          //    icon: <GithubLogo size={24} />,
+          //    url: "https://github.com/rukkiechovwe/icompressor-project",
+          //    tooltip: "View on github",
+          //  },
+        ],
+      },
+      {
+        title: "Eventss",
+        tags: ["web"],
+        desc: "Icompresser is a website to compress and convert images of different sizes and format.",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://event-template.netlify.app/",
+            tooltip: "View the web",
+          },
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/kosa",
             tooltip: "View on github",
           },
         ],

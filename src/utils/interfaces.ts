@@ -2,7 +2,9 @@ export interface IHero {
   tag?: string;
   name: string;
   catchPhrase: string;
-  tagLine: string;
+  text: string;
+  desc:string,
+  greeting:string;
 }
 
 export interface IAbout {
