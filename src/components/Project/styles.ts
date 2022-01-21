@@ -45,6 +45,9 @@ export const Project = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: ${(props) => props.theme.borderColor};
 
     @media (min-width: 570px) {
       padding: 3rem 1.6rem

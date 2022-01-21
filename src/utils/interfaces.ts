@@ -3,8 +3,8 @@ export interface IHero {
   name: string;
   catchPhrase: string;
   text: string;
-  desc:string,
-  greeting:string;
+  desc: string;
+  greeting: string;
 }
 
 export interface IAbout {
@@ -82,4 +82,5 @@ export interface ITheme {
   projectDescColor?: string;
   tooltipColor?: string;
   borderColor?: string;
+  boxShadow?: string;
 }

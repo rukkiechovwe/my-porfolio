@@ -7,7 +7,9 @@ type HeroProps = {
   hero: IHero;
 };
 
-const Hero: React.FC<HeroProps> = ({ hero: { text,desc,greeting, catchPhrase } }) => {
+const Hero: React.FC<HeroProps> = ({
+  hero: { text, desc, greeting, catchPhrase },
+}) => {
   return (
     <S.Container>
       <S.Greetings>
@@ -19,9 +21,13 @@ const Hero: React.FC<HeroProps> = ({ hero: { text,desc,greeting, catchPhrase } }
       <S.DescText> {desc}</S.DescText>
       {/* <S.SpiralImage src="/assets/images/spiral2.png" /> */}
       {/* <S.SpiralImage1 src="/assets/images/spiral1.png" /> */}
-      {/* <S.StarfishImage src="/assets/images/bitmoji.png" /> */}
-      {/* <S.Bitmoji src="/assets/images/bitmoji.png" /> */}
-      <Button isPrimary onClick={(_e) => scrollTo("about")} >
+      <S.JsContainer>
+        <S.Language src="/assets/images/js.png" />
+      </S.JsContainer>
+      <S.VueContainer>
+        <S.Language src="/assets/images/vue.png" />
+      </S.VueContainer>
+      <Button onClick={(_e) => scrollTo("about")}>
         Learn More
       </Button>
     </S.Container>

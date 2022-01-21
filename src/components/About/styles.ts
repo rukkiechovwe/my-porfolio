@@ -17,6 +17,8 @@ export const Container = styled.div`
 
   @media only screen and (min-width: 765px) {
     padding: 2rem 3.54rem;
+    flex-direction: row-reverse;
+    align-items: flex-start;
   }
   @media only screen and (min-width: 1024px) {
     padding: 2rem 5.54rem;
@@ -25,17 +27,29 @@ export const Container = styled.div`
     padding: 2rem 7.54rem;
   }
 `;
+export const AboutContainer = styled.div`
+  text-align: right;
+  width: 50%;
+  padding: 40px 0 40px 10px;
+  @media only screen and (max-width: 765px) {
+    text-align: center;
+    width: 100%;
+  }
+`;
 export const SkillContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
-  text-align: center;
-  align-items: center;
-  width: 100%;
+  padding: 40px 10px 40px 0;
+  text-align: left;
+//   align-items: center;
+  width: 60%;
   text-transform: capitalize;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 1px;
+  @media only screen and (max-width: 765px) {
+     width: 100%;
+  }
   @media only screen and (max-width: 570px) {
     font-size: 16px;
   }
@@ -43,13 +57,18 @@ export const SkillContainer = styled.div`
 export const SkillItem = styled.div`
   display: flex;
   font-weight: 200;
-  padding: 5px 0;
+  //   padding: 5px 0;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: ${(props) => props.theme.buttonColor};
+  box-shadow: ${(props) => props.theme.boxShadow};
+  border-radius: 5px;
 
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 100%;
+  //   justify-content: flex-start;
+  //   flex-direction: column;
+  //   width: 100%;
   @media only screen and (min-width: 570px) {
-    justify-content: center;
+    //  justify-content: center;
     flex-direction: row;
   }
 `;
@@ -65,13 +84,13 @@ export const HeaderText = styled.h1`
 export const ParaText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   font-weight: 100;
-  padding: 0 2%;
-  text-align: center;
+//   padding: 0 2%;
+//   text-align: center;
   line-height: 26px;
   letter-spacing: 1px;
 
   @media only screen and (min-width: 765px) {
-    padding: 0 4%;
+   //  padding: 0 4%;
   }
 `;
 

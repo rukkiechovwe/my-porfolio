@@ -20,8 +20,8 @@ export const HeaderText = styled.h1`
   font-weight: 400;
   color: ${(props) => (props.theme as ITheme).headerTextColor};
   z-index: 9;
-  margin: .5rem 0;
-  @media only screen and (min-width: 450px) {
+  margin: 0.5rem 0;
+  @media only screen and (min-width: 400px) {
     font-size: 70px;
   }
   @media only screen and (min-width: 768px) {
@@ -31,19 +31,25 @@ export const HeaderText = styled.h1`
 `;
 export const Greetings = styled.h4`
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
   font-weight: 900;
   letter-spacing: 2px;
   color: ${(props) => (props.theme as ITheme).headerTextColor};
+  @media only screen and (min-width: 400px) {
+    font-size: 22px;
+  }
 `;
 export const DescText = styled.h4`
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   letter-spacing: 1px;
   margin: 0 0 3rem;
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
+  @media only screen and (min-width: 400px) {
+    font-size: 18px;
+  }
 `;
 
 export const ColoredText = styled.span`
@@ -103,13 +109,62 @@ export const StarfishImage = styled(Image)`
     width: 20.625em;
   }
 `;
-
-export const Bitmoji = styled(Image)`
-  width: 15.625em;
-
-  bottom: 20%;
-  right: 20%;
-  @media only screen and (min-width: 570px) {
-    width: 20.625em;
+export const VueContainer = styled.div`
+  //   animation: ${rotate} 12s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: ${(props) => props.theme.buttonColor};
+  width: 4em;
+  height: 4em;
+  bottom: 10%;
+  right: 9%;
+  position: absolute;
+  box-shadow: ${(props) => props.theme.boxShadow};
+  @media only screen and (min-width: 400px) {
+    width: 5em;
+    height: 5em;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 6em;
+    height: 6em;
+    bottom: 18%;
+    right: 14%;
+  }
+`;
+export const JsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: ${(props) => props.theme.buttonColor};
+  width: 3em;
+  height: 3em;
+  bottom: 75%;
+  left: 10%;
+  position: absolute;
+  box-shadow: ${(props) => props.theme.boxShadow};
+  @media only screen and (min-width: 400px) {
+    width: 4em;
+    height: 4em;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 5em;
+    height: 5em;
+    bottom: 60%;
+    left: 16%;
+  }
+`;
+export const Language = styled(Image)`
+  width: 1.5em;
+  height: 1.5em;
+  @media only screen and (min-width: 400px) {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 3em;
+    height: 3em;
   }
 `;

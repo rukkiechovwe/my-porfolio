@@ -1,6 +1,4 @@
 import {
-  AppStoreLogo,
-  GooglePlayLogo,
   GithubLogo,
   Globe,
   LinkedinLogo,
@@ -18,14 +16,13 @@ const app: IApp = {
     catchPhrase: "Rukkie",
     text: "I'm",
     greeting: "Hello there",
-    desc: "| Front-end developer |",
+    desc: "<> Front-end developer </>",
   },
   about: {
     tag: "about",
     name: "Ufuoma",
     bio: "I'm a , I've 2 years of experience working with modern web technologies, I love watching movies and animes.\n I'm currently looking for a full-time opportunity/gig as a frontend developer.",
-   //  email: "rukkiechowe@gmail.com",
-   //  resumeUrl: "/assets/resume.pdf",
+
     skills: [
       {
         title: "I'm proficient and actively working with",
@@ -38,33 +35,23 @@ const app: IApp = {
             name: "frontend",
             data: ["reactjs", "nextjs"],
           },
-         //  {
-         //    name: "mobile",
-         //    data: ["flutter", "react-native", "jetpack-compose"],
-         //  },
           {
             name: "state-management",
-            data: [ "vuex", "redux"],
+            data: ["vuex", "redux"],
           },
           {
             name: "styling",
-            data: ["CSS3", "styled-components", "chakra-ui", "tailwindcss"],
-          },
-          {
-            name: "Testing/DevOps",
             data: [
-              "Jest",
-              "Mocha",
-              "Flutter testing library",
-              "Git",
-              "Github Action",
-              "Jenkins",
-              "Circle CI",
+              "CSS3",
+              "styled-components",
+              "tailwindcss",
+              "ant design",
             ],
           },
+
           {
             name: "database",
-            data: [ "firebase", "graphql"],
+            data: ["firebase", "graphql"],
           },
         ],
       },
@@ -72,26 +59,26 @@ const app: IApp = {
   },
   contact: {
     tag: "contact",
-    email: "hey@stanleee.me",
+    email: "rukkiechowe@gmail.com",
     urls: [
       {
         icon: <FilePdf size={22} />,
-        url: "/assets/Resume_Stanley_Akpama.pdf",
+        url: "/assets/Resume_Ufuoma_Oghenechovwe.pdf",
         title: "Resume",
       },
       {
         icon: <LinkedinLogo size={22} />,
-        url: "https://linkedin.com/in/stan0x01",
+        url: "https://linkedin.com/in/rukkiechovwe",
         title: "Linkedin",
       },
       {
         icon: <TwitterLogo size={22} />,
-        url: "https://twitter.com/iamstanlee_",
+        url: "https://twitter.com/rukkiechovwe",
         title: "Twitter",
       },
       {
         icon: <GithubLogo size={22} />,
-        url: "https://github.com/iamstanlee",
+        url: "https://github.com/rukkiechovwe",
         title: "Github",
       },
     ],
@@ -102,7 +89,7 @@ const app: IApp = {
     projects: [
       {
         title: "kivifood",
-        tags: ["web"],
+        tags: ["react", "styled-component"],
         desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
         links: [
           {
@@ -112,12 +99,10 @@ const app: IApp = {
           },
         ],
       },
-    
-     
 
       {
         title: "lastprice",
-        tags: ["web"],
+        tags: ["react", "redux", "ant design"],
         desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
         links: [
           {
@@ -135,7 +120,7 @@ const app: IApp = {
       },
       {
         title: "Icompresser",
-        tags: ["web"],
+        tags: ["html", "Css3", "javascript"],
         desc: "Icompresser is a website to compress and convert images of different sizes and format.",
         links: [
           {
@@ -143,17 +128,12 @@ const app: IApp = {
             url: "https://www.icompresser.com/",
             tooltip: "View the web",
           },
-          //  {
-          //    icon: <GithubLogo size={24} />,
-          //    url: "https://github.com/rukkiechovwe/icompressor-project",
-          //    tooltip: "View on github",
-          //  },
         ],
       },
       {
-        title: "Eventss",
-        tags: ["web"],
-        desc: "Icompresser is a website to compress and convert images of different sizes and format.",
+        title: "Event Template",
+        tags: ["html", "Css3"],
+        desc: "A template to book for your favorite events.",
         links: [
           {
             icon: <Globe size={24} />,
