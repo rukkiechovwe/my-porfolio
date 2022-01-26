@@ -30,7 +30,7 @@ export const Container = styled.div`
 export const AboutContainer = styled.div`
   text-align: right;
   width: 50%;
-  padding: 40px 0 40px 10px;
+  padding: 0px 0 40px 10px;
   @media only screen and (max-width: 765px) {
     text-align: center;
     width: 100%;
@@ -58,14 +58,14 @@ export const SkillItem = styled.div`
   display: flex;
   font-weight: 200;
   //   padding: 5px 0;
-  padding: 20px;
+  padding: 15px;
   margin: 20px 0;
   background-color: ${(props) => props.theme.buttonColor};
   box-shadow: ${(props) => props.theme.boxShadow};
   border-radius: 5px;
 
   //   justify-content: flex-start;
-  //   flex-direction: column;
+    flex-direction: column;
   //   width: 100%;
   @media only screen and (min-width: 570px) {
     //  justify-content: center;
@@ -126,7 +126,7 @@ export const HandSignImage = styled(Image)`
   }
 `;
 
-export const BoltImage = styled(Image)`
-  width: 10.625em;
+export const AboutImage = styled(Image)`
+  width: 11.625em;
   position: relative;
 `;

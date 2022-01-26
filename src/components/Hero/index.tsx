@@ -27,9 +27,10 @@ const Hero: React.FC<HeroProps> = ({
       <S.VueContainer>
         <S.Language src="/assets/images/vue.png" />
       </S.VueContainer>
-      <Button onClick={(_e) => scrollTo("about")}>
-        Learn More
-      </Button>
+      <S.ReactContainer>
+        <S.Language src="/assets/images/react.png" />
+      </S.ReactContainer>
+      <Button onClick={(_e) => scrollTo("about")}>Learn More</Button>
     </S.Container>
   );
 };

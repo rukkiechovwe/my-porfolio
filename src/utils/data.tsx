@@ -21,7 +21,7 @@ const app: IApp = {
   about: {
     tag: "about",
     name: "Ufuoma",
-    bio: "I'm a , I've 2 years of experience working with modern web technologies, I love watching movies and animes.\n I'm currently looking for a full-time opportunity/gig as a frontend developer.",
+    bio: "I’m a frontend developer who's passionate about building elegant and accessible user interfaces and delivering the best experience to end users. In my 2 years of experience, i have worked with modern web technologies. I love watching movies and animes.\n\n I'm currently looking for a full-time opportunity/gig as a frontend developer.",
 
     skills: [
       {
@@ -33,7 +33,7 @@ const app: IApp = {
           },
           {
             name: "frontend",
-            data: ["reactjs", "nextjs"],
+            data: ["reactjs", "nextjs", "nuxtjs"],
           },
           {
             name: "state-management",
@@ -41,12 +41,7 @@ const app: IApp = {
           },
           {
             name: "styling",
-            data: [
-              "CSS3",
-              "styled-components",
-              "tailwindcss",
-              "ant design",
-            ],
+            data: ["CSS3", "styled-components", "tailwindcss", "ant design"],
           },
 
           {

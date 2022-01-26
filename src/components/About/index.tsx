@@ -9,6 +9,7 @@ const About: React.FC<Props> = ({ about: { tag, name, bio, skills } }) => {
   return (
     <S.Container id={tag}>
       <S.AboutContainer>
+        <S.AboutImage src="/assets/images/bitmoji.png" />
         <S.HeaderText>A little bit about me</S.HeaderText>
         <S.ParaText dangerouslySetInnerHTML={{ __html: bio }}></S.ParaText>
       </S.AboutContainer>
@@ -26,7 +27,6 @@ const About: React.FC<Props> = ({ about: { tag, name, bio, skills } }) => {
         </S.SkillContainer>
       ))}
 
-      {/* <S.BoltImage src="/assets/images/bolt.png" /> */}
       {/* <S.HandSignImage src="/assets/images/okay-hand.png" /> */}
     </S.Container>
   );

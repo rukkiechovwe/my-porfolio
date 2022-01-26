@@ -9,6 +9,7 @@ export const Container = styled.div`
   height: 80vh;
   min-height: 550px;
   padding: 0 15px;
+  position: relative;
   @media only screen and (min-width: 765px) {
     padding: 0 15px;
   }
@@ -92,10 +93,10 @@ export const SpiralImage1 = styled(Image)`
 
 const rotate = keyframes`
   from {
-    transform: rotate(0deg);
+    transform: transalte(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(-20px);
   }
 `;
 
@@ -109,8 +110,32 @@ export const StarfishImage = styled(Image)`
     width: 20.625em;
   }
 `;
+export const ReactContainer = styled.div`
+  animation: ${rotate} 1s alternate-reverse 2s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: ${(props) => props.theme.buttonColor};
+  width: 3.5em;
+  height: 3.5em;
+  bottom: 11%;
+  left: 15%;
+  position: absolute;
+  box-shadow: ${(props) => props.theme.boxShadow};
+  @media only screen and (min-width: 400px) {
+    width: 4.5em;
+    height: 4.5em;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 5.5em;
+    height: 5.5em;
+    bottom: 19%;
+    left: 19%;
+  }
+`;
 export const VueContainer = styled.div`
-  //   animation: ${rotate} 12s linear infinite;
+  animation: ${rotate} 1s alternate-reverse .7s infinite;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,7 +143,7 @@ export const VueContainer = styled.div`
   background-color: ${(props) => props.theme.buttonColor};
   width: 4em;
   height: 4em;
-  bottom: 10%;
+  bottom: 8%;
   right: 9%;
   position: absolute;
   box-shadow: ${(props) => props.theme.boxShadow};
@@ -129,11 +154,12 @@ export const VueContainer = styled.div`
   @media only screen and (min-width: 768px) {
     width: 6em;
     height: 6em;
-    bottom: 18%;
+    bottom: 16%;
     right: 14%;
   }
 `;
 export const JsContainer = styled.div`
+  animation: ${rotate} 1s alternate infinite;
   display: flex;
   align-items: center;
   justify-content: center;
