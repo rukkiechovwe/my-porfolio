@@ -82,6 +82,23 @@ const app: IApp = {
   project: {
     tag: "project",
     projects: [
+        {
+        title: "RK-Store",
+        tags: ["react", "styled-component"],
+        desc: "An elegant ecommerce application",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://rukkies-ecommerce.netlify.app/",
+            tooltip: "View the web",
+          },
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/ecommerce",
+            tooltip: "View on github",
+          },
+        ],
+      },
       {
         title: "kivifood",
         tags: ["react", "styled-component"],
@@ -125,23 +142,7 @@ const app: IApp = {
           },
         ],
       },
-      {
-        title: "Event Template",
-        tags: ["html", "Css3"],
-        desc: "A template to book for your favorite events.",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://event-template.netlify.app/",
-            tooltip: "View the web",
-          },
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/kosa",
-            tooltip: "View on github",
-          },
-        ],
-      },
+     
     ],
   },
 
