@@ -33,7 +33,7 @@ const app: IApp = {
           },
           {
             name: "frontend",
-            data: ["reactjs", "nextjs", "nuxtjs"],
+             data: ["reactjs","vuejs", "nextjs", "nuxtjs"],
           },
           {
             name: "state-management",
