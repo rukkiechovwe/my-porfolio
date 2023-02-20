@@ -114,7 +114,7 @@ const app: IApp = {
       {
         title: "Art Gallery Template",
         tags: ["html", "Css3", "javascript"],
-        desc: "A webite template artists can use to showcase their works.",
+        desc: "A template artists can use to showcase their work.",
         links: [
           {
             icon: <Globe size={24} />,
