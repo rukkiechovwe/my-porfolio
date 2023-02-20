@@ -21,7 +21,7 @@ const app: IApp = {
   about: {
     tag: "about",
     name: "Ufuoma",
-    bio: "I’m a frontend developer who's passionate about building elegant and accessible user interfaces and delivering the best experience to end users. In my 2 years of experience, i have worked with modern web technologies. I love watching movies and animes.\n\n I'm currently looking for a full-time opportunity/gig as a frontend developer.",
+    bio: "I'm a creative frontend developer with 2+years of experience in working with diverse and talented teams to deliver exceptional web experiences that are both visually appealing and technically demanding. I am also committed to staying current with the latest trends and technologies in web development.",
 
     skills: [
       {
@@ -33,7 +33,7 @@ const app: IApp = {
           },
           {
             name: "frontend",
-             data: ["reactjs","vuejs", "nextjs", "nuxtjs"],
+            data: ["reactjs", "vuejs", "nextjs", "nuxtjs"],
           },
           {
             name: "state-management",
@@ -41,7 +41,7 @@ const app: IApp = {
           },
           {
             name: "styling",
-            data: ["CSS3", "styled-components", "tailwindcss", "ant design"],
+            data: ["CSS3", "styled-components", "tailwindcss", "MUI"],
           },
 
           {
@@ -82,10 +82,10 @@ const app: IApp = {
   project: {
     tag: "project",
     projects: [
-        {
+      {
         title: "RK-Store",
         tags: ["react", "styled-component"],
-        desc: "An elegant ecommerce application",
+        desc: "An elegant ecommerce application.",
         links: [
           {
             icon: <Globe size={24} />,
@@ -99,6 +99,30 @@ const app: IApp = {
           },
         ],
       },
+      // {
+      //   title: "Metadapp",
+      //   tags: ["react", "MUI", "Web3"],
+      //   desc: "An all in one Web3 dashboard",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://metadapp.com",
+      //       tooltip: "View the web",
+      //     },
+      //   ],
+      // },
+      {
+        title: "Art Gallery Template",
+        tags: ["html", "Css3", "javascript"],
+        desc: "A webite template artists can use to showcase their works.",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://rukkies-art-gallery.netlify.app",
+            tooltip: "View the web",
+          },
+        ],
+      },
       {
         title: "kivifood",
         tags: ["react", "styled-component"],
@@ -106,7 +130,7 @@ const app: IApp = {
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https:kivifood.app",
+            url: "https://kivifood.netlify.app/",
             tooltip: "View the web",
           },
         ],
@@ -130,19 +154,6 @@ const app: IApp = {
           },
         ],
       },
-      {
-        title: "Icompresser",
-        tags: ["html", "Css3", "javascript"],
-        desc: "Icompresser is a website to compress and convert images of different sizes and format.",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://www.icompresser.com/",
-            tooltip: "View the web",
-          },
-        ],
-      },
-     
     ],
   },
 
