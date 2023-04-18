@@ -24,7 +24,7 @@ const AppStyles = createGlobalStyle`
 
    }
    p {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 100;
       @media only screen and (max-width: 570px) {
     font-size: 16px;

@@ -4,7 +4,7 @@ import { ITheme } from "../../utils/interfaces";
 export const Container = styled.div`
   box-sizing: border-box;
   position: relative;
-  padding: 0 15px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,8 +17,6 @@ export const Container = styled.div`
 
   @media only screen and (min-width: 765px) {
     padding: 2rem 3.54rem;
-    flex-direction: row-reverse;
-    align-items: flex-start;
   }
   @media only screen and (min-width: 1024px) {
     padding: 2rem 5.54rem;
@@ -28,9 +26,9 @@ export const Container = styled.div`
   }
 `;
 export const AboutContainer = styled.div`
-  text-align: right;
-  width: 50%;
-  padding: 0px 0 40px 10px;
+  text-align: center;
+  width: 80%;
+  padding: 0px 0 40px 0;
   @media only screen and (max-width: 765px) {
     text-align: center;
     width: 100%;
@@ -39,58 +37,64 @@ export const AboutContainer = styled.div`
 export const SkillContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 40px 10px 40px 0;
+  padding: 0 0 40px 0;
   text-align: left;
-//   align-items: center;
-  width: 60%;
+  width: 100%;
   text-transform: capitalize;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: 1px;
   @media only screen and (max-width: 765px) {
-     width: 100%;
+    width: 100%;
   }
   @media only screen and (max-width: 570px) {
     font-size: 16px;
+    padding: 0 0 60px 0;
   }
 `;
+export const SkillList = styled.div`
+  margin-top: 25px;
+  width: 100%;
+  display: grid;
+  grid-template: 1fr / 100%;
+  gap: 20px;
+
+  @media only screen and (min-width: 670px) {
+    grid-template: 1fr / 50% 50%;
+  }
+`;
+
 export const SkillItem = styled.div`
   display: flex;
   font-weight: 200;
-  //   padding: 5px 0;
   padding: 15px;
-  margin: 20px 0;
   background-color: ${(props) => props.theme.buttonColor};
   box-shadow: ${(props) => props.theme.boxShadow};
   border-radius: 5px;
 
-  //   justify-content: flex-start;
-    flex-direction: column;
-  //   width: 100%;
+  flex-direction: column;
   @media only screen and (min-width: 570px) {
-    //  justify-content: center;
     flex-direction: row;
   }
 `;
 export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 100;
   @media only screen and (max-width: 570px) {
-    font-size: 34px;
+    font-size: 30px;
   }
 `;
 
 export const ParaText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   font-weight: 100;
-//   padding: 0 2%;
-//   text-align: center;
+  text-align: center;
   line-height: 26px;
   letter-spacing: 1px;
 
   @media only screen and (min-width: 765px) {
-   //  padding: 0 4%;
+    //  padding: 0 4%;
   }
 `;
 
@@ -103,6 +107,7 @@ export const ColoredLinkText = styled.a`
 export const SkillTitleText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   margin: 0;
+  text-align: center;
 `;
 export const DataNameText = styled.span`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};

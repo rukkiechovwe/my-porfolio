@@ -17,7 +17,7 @@ export const Container = styled.nav`
 `;
 
 export const Logo = styled.span`
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: white;
   font-weight: 200;

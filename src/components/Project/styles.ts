@@ -100,10 +100,10 @@ export const Tag = styled.div`
 // Texts
 export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 100;
   @media only screen and (max-width: 570px) {
-    font-size: 34px;
+    font-size: 30px;
   }
 `;
 
@@ -116,10 +116,10 @@ export const TitleText = styled.h3`
   text-transform: capitalize;
   letter-spacing: 3px;
   margin: 0 0 20px;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 100;
   @media only screen and (max-width: 570px) {
-    font-size: 31px;
+    font-size: 26px;
   }
 `;
 
@@ -128,8 +128,8 @@ export const DescText = styled.p`
   margin: 0 0 20px;
   font-weight: 200;
   padding: 0;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: 1px;
   @media only screen and (max-width: 570px) {
     font-size: 15px;

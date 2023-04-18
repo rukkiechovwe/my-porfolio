@@ -21,7 +21,7 @@ const app: IApp = {
   about: {
     tag: "about",
     name: "Ufuoma",
-    bio: "I'm a creative frontend developer with 2+years of experience in working with diverse and talented teams to deliver exceptional web experiences that are both visually appealing and technically demanding. I am also committed to staying current with the latest trends and technologies in web development.",
+    bio: "I'm a creative frontend developer with 2+years of experience in working with diverse and talented teams to deliver exceptional web experiences that are both visually appealing and technically demanding.",
 
     skills: [
       {
@@ -83,6 +83,35 @@ const app: IApp = {
     tag: "project",
     projects: [
       {
+        title: "Fem GPT",
+        tags: ["react", "TailwindCSS", "AI"],
+        desc: "Female health advisor",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://fem-gpt.vercel.app/",
+            tooltip: "View the web",
+          },
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/fem-gpt",
+            tooltip: "View on github",
+          },
+        ],
+      },
+      {
+        title: "Metadapp",
+        tags: ["react", "MUI", "Web3"],
+        desc: "An all in one Web3 dashboard",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://metadapp.com",
+            tooltip: "View the web",
+          },
+        ],
+      },
+      {
         title: "RK-Store",
         tags: ["react", "styled-component"],
         desc: "An elegant ecommerce application.",
@@ -99,30 +128,7 @@ const app: IApp = {
           },
         ],
       },
-      // {
-      //   title: "Metadapp",
-      //   tags: ["react", "MUI", "Web3"],
-      //   desc: "An all in one Web3 dashboard",
-      //   links: [
-      //     {
-      //       icon: <Globe size={24} />,
-      //       url: "https://metadapp.com",
-      //       tooltip: "View the web",
-      //     },
-      //   ],
-      // },
-      {
-        title: "Art Gallery Template",
-        tags: ["html", "Css3", "javascript"],
-        desc: "A template artists can use to showcase their work.",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://rukkies-art-gallery.netlify.app",
-            tooltip: "View the web",
-          },
-        ],
-      },
+
       {
         title: "kivifood",
         tags: ["react", "styled-component"],
@@ -136,24 +142,24 @@ const app: IApp = {
         ],
       },
 
-      {
-        title: "lastprice",
-        tags: ["react", "redux", "ant design"],
-        desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://amazing-torvalds-02adef.netlify.app",
-            tooltip: "View the web",
-          },
+      // {
+      //   title: "lastprice",
+      //   tags: ["react", "redux", "ant design"],
+      //   desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://amazing-torvalds-02adef.netlify.app",
+      //       tooltip: "View the web",
+      //     },
 
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/iamstanlee/last-price",
-            tooltip: "View on github",
-          },
-        ],
-      },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/iamstanlee/last-price",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
     ],
   },
 

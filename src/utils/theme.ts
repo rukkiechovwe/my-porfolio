@@ -25,6 +25,6 @@ export const darkTheme: ITheme = {
   titleColor: "#fff",
   projectDescColor: "#7d7d7d",
   tooltipColor: "#000",
-  borderColor: "1px solid #1e1e1e94",
+  borderColor: "1px solid #26262694",
   boxShadow: "3px 3px 20px #0404045e",
 };

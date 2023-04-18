@@ -19,7 +19,7 @@ const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
             <S.Spaced height="14px" />
             <S.TitleText>
               {item.title}
-              <ArrowUpRight size={32} />
+              <ArrowUpRight size={22} />
             </S.TitleText>
             <S.TagRow>
               {item.tags.map((tag, i) => (
