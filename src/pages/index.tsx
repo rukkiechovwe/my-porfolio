@@ -8,8 +8,9 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Project from "../components/Project";
+import Socials from "../components/Socials";
 import { useThemeContext } from "../context/theme_context";
-import AppStyles from "../globalstyles";
+import AppStyles from "../styles/globalstyles";
 import { IApp } from "../utils/interfaces";
 
 type Props = {
@@ -27,11 +28,12 @@ const Home: NextPage<Props> = ({ app }: Props) => {
         <link rel="icon" href="/favicon_.ico" />
       </Head>
       <Header />
+      <Socials socials={app.socials} />
       <Hero hero={app.hero} />
+
       <About about={app.about} />
       <Project project={app.project} />
       <Contact contact={app.contact} />
-
       <Footer />
     </ThemeProvider>
   );

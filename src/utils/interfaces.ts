@@ -46,16 +46,11 @@ export interface IProject {
   tag?: string;
   projects: Project[];
 }
-export interface IBlog {
-  tag: string;
-  blogs: Blog[];
+
+export interface ISocials {
+  tag?: string;
+  urls: (Link & { title: string })[];
 }
-export type Blog = {
-  title: string;
-  date: string;
-  text: string;
-  link: string;
-};
 
 export interface IApp {
   title: string;
@@ -64,7 +59,7 @@ export interface IApp {
   about: IAbout;
   contact: IContact;
   project: IProject;
-  blog: IBlog;
+  socials: ISocials;
 }
 
 export interface ITheme {

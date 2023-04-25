@@ -10,14 +10,18 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 20vh;
+  margin: 0 auto;
+
   @media only screen and (min-width: 570px) {
     padding: 2rem 2.54rem;
   }
-  @media only screen and (min-width: 765px) {
+  @media only screen and (min-width: 768px) {
     padding: 2rem 3.54rem;
+    max-width: 650px;
   }
   @media only screen and (min-width: 1024px) {
     padding: 2rem 5.54rem;
+    max-width: 991px;
   }
   @media only screen and (min-width: 1200px) {
     padding: 2rem 7.54rem;
@@ -27,7 +31,7 @@ export const Container = styled.div`
 export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
   font-size: 36px;
-  font-weight: 100;
+  font-weight: 500;
   @media only screen and (max-width: 570px) {
     font-size: 30px;
   }
@@ -53,11 +57,12 @@ export const ColoredText = styled.span`
   color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;
 
-export const ButtonWrapper = styled.div`
-  margin: 10px 0;
+export const ResumeContainer = styled.div`
+  display: none;
 
-  @media only screen and (min-width: 765px) {
-    margin: 0 8px;
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    display: flex;
   }
 `;
 
@@ -65,8 +70,24 @@ export const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media only screen and (min-width: 765px) {
-    flex-direction: row;
+  @media only screen and (min-width: 600px) {
+    display: grid;
+    grid-template: 1fr 1fr / 50% 50%;
+    gap: 20px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  margin: 10px 0;
+  width: 50%;
+
+  @media only screen and (min-width: 600px) {
+    margin: 0;
+    width: fit-content;
   }
 `;
 

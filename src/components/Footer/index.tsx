@@ -10,16 +10,6 @@ const Container = styled.div`
   width: 100%;
 `;
 
-export const SpiralImage1 = styled.img`
-  position: absolute;
-  max-width: 5.625em;
-  bottom: 0;
-  right: 0;
-  @media only screen and (min-width: 570px) {
-    max-width: 8.625em;
-  }
-`;
-
 const Text = styled.span`
   color: ${(props) => props.theme.textColor};
   z-index: 99;
@@ -28,9 +18,8 @@ const Text = styled.span`
 const Footer: React.FC = () => {
   return (
     <Container>
-      <Text>©2022 </Text>
+      <Text>©2023 </Text>
       <Text>Designed with ❤️</Text>
-      <SpiralImage1 src="/assets/images/spiral1.png" />
     </Container>
   );
 };

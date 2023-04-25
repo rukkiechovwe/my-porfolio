@@ -1,7 +1,7 @@
 import { MouseEventHandler } from "react";
 import styled from "styled-components";
 
-const SButton = styled.button<IButton>`
+export const SButton = styled.button<IButton>`
   z-index: 9;
   display: flex;
   align-items: center;
@@ -15,6 +15,7 @@ const SButton = styled.button<IButton>`
   background-color: ${(props) =>
     props.isPrimary ? props.theme.buttonPrimaryColor : props.theme.buttonColor};
   color: ${(props) => (props.isPrimary ? "#fff" : props.theme.textColor)};
+  transition: 1s ease;
   &:hover {
     cursor: pointer;
     color: ${(props) => props.theme.buttonHoverTextColor};

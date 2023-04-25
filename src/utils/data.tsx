@@ -4,6 +4,7 @@ import {
   LinkedinLogo,
   TwitterLogo,
   FilePdf,
+  EnvelopeSimple,
 } from "phosphor-react";
 import { IApp } from "./interfaces";
 
@@ -163,14 +164,28 @@ const app: IApp = {
     ],
   },
 
-  blog: {
-    tag: "blog",
-    blogs: [
+  socials: {
+    tag: "socials",
+    urls: [
       {
-        title: "Leetcode #845 — Longest Mountain In Array",
-        date: "DEC 24, 2021",
-        text: "The leetcode #845 problem is a classical dynamic programming problem where we are asked to return the length of the longest mountain subarray from a given array. What is a mountain array? from the leetcode description, an array is a mountain array if it satisfies the following...",
-        link: "https://medium.com/@iamstanlee/leetcode-845-longest-mountain-in-array-256202687979",
+        icon: <EnvelopeSimple size={24} />,
+        url: "mailto:rukkiechowe@gmail.com",
+        title: "Email",
+      },
+      {
+        icon: <LinkedinLogo size={24} />,
+        url: "https://linkedin.com/in/rukkiechovwe",
+        title: "Linkedin",
+      },
+      {
+        icon: <TwitterLogo size={24} />,
+        url: "https://twitter.com/rukkiechovwe",
+        title: "Twitter",
+      },
+      {
+        icon: <GithubLogo size={24} />,
+        url: "https://github.com/rukkiechovwe",
+        title: "Github",
       },
     ],
   },

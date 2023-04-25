@@ -1,40 +1,54 @@
 import { createGlobalStyle } from "styled-components";
-import { ITheme } from "./utils/interfaces";
+import { ITheme } from "../utils/interfaces";
 
 const AppStyles = createGlobalStyle`
    @font-face {
-      font-family: 'Almarena-Regular';
-      src: url("/assets/fonts/Almarena-Light_utwkum.woff") format("woff");
+      font-family: 'Eina';
+      font-weight:400;
+      src: url("/assets/fonts/Eina-Regular.ttf");
    }
+
+   @font-face {
+      font-family: 'AtypText';
+      font-weight:500;
+      src: url("/assets/fonts/AtypText-Semibold.ttf");
+   }
+
    *:focus {
       outline: none;
    }
+
    body,html {
       margin: 0;
       padding: 0;
-      font-family: 'Almarena-Regular';
+      font-family: 'Eina';
+      font-weight:400;
       background-color: ${(props) => (props.theme as ITheme).bgColor};
    }
-   body{
+
+   body {
       overflow-x: hidden;
    }
+
    a {
       text-decoration: none;
       color: #36e2b2;
-
    }
+
    p {
       font-size: 17px;
-      font-weight: 100;
+      font-weight: 400;
       @media only screen and (max-width: 570px) {
-    font-size: 16px;
-  }
+         font-size: 16px;
+      }
    }
-   h3 {
-      font-weight: 100;
 
+   h1, h2, h3 {
+      font-weight: 500;
+      font-family: 'AtypText';
    }
-    .tooltip-container {
+
+   .tooltip-container {
       position: relative;
    }
 

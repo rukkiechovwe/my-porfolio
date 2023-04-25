@@ -80,7 +80,7 @@ export const SkillItem = styled.div`
 export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
   font-size: 36px;
-  font-weight: 100;
+  font-weight: 500;
   @media only screen and (max-width: 570px) {
     font-size: 30px;
   }
