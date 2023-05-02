@@ -83,7 +83,7 @@ const bounceLetters = keyframes`
 export const NameLetters = styled.span`
   display: inline-block;
   transform: scale(1);
-  color: #fff;
+  color: ${(props) => (props.theme as ITheme).headerTextColor};
   transition: all 300ms ease;
 
   &:hover {

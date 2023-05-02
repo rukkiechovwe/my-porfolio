@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Link from "next/link";
+
 import { SideLine } from "../../styles/commonstyles";
 
 export const Container = styled.nav`
@@ -14,6 +16,18 @@ export const Container = styled.nav`
     height: fit-content;
     width: fit-content;
     z-index: 99;
+  }
+`;
+
+export const Bar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  img {
+    @media only screen and (min-width: 768px) {
+      display: none !important;
+    }
   }
 `;
 
@@ -92,14 +106,46 @@ export interface IListItem {
   active?: boolean;
 }
 
-export const ListItem = styled.li`
+export const ListItem = styled.li<IListItem>`
   margin: 0 20px;
   padding: 10px 0;
+
+  & a {
+    display: block;
+    padding: 13px 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 1s ease;
+    font-size: 16px;
+    text-align: center;
+    color: ${(props) =>
+      props.active ? props.theme.buttonHoverTextColor : props.theme.textColor};
+
+    @media only screen and (min-width: 769px) {
+      font-size: 14px;
+      padding: 8px 0;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+      color: ${(props) => props.theme.highlightTextColor};
+      text-decoration: underline;
+
+      @media only screen and (min-width: 768px) {
+        text-align: left;
+      }
+    }
+  }
 `;
 
-export const Link = styled.a<IListItem>`
+export const ListItemImg = styled(ListItem)`
+  margin: 0 auto;
+`;
+
+export const StyledLink = styled(Link)<IListItem>`
   display: block;
-  padding: 10px 0;
+  padding: 13px 0;
   text-decoration: none;
   text-transform: capitalize;
   transition: 1s ease;
@@ -107,11 +153,18 @@ export const Link = styled.a<IListItem>`
   text-align: center;
   color: ${(props) =>
     props.active ? props.theme.buttonHoverTextColor : props.theme.textColor};
+
+  @media only screen and (min-width: 769px) {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
   &:hover {
     opacity: 0.9;
     cursor: pointer;
     color: ${(props) => props.theme.highlightTextColor};
     text-decoration: underline;
+
     @media only screen and (min-width: 768px) {
       text-align: left;
     }

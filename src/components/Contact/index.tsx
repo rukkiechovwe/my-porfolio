@@ -10,14 +10,14 @@ const Contact: React.FC<Props> = ({ contact: { tag, email, urls } }) => {
   return (
     <S.Container id={tag}>
       <S.HeaderText>
-        Say <S.ColoredText>Hi</S.ColoredText>
+        Say <S.ColoredText>Hi!</S.ColoredText>
       </S.HeaderText>
       <S.SpaceY space="10px" />
 
       <S.SpanText>
         Don&#39;t be a stranger 👀 :), I&#39;m looking to connect and meet new
         people in tech, If you&#39;re a developer, designer or in need of my
-        services, download my resume and let&#39;s chat!
+        services, connect with me on social media or download my resume and let&#39;s chat!
       </S.SpanText>
       <S.SpaceY space="40px" />
       <S.ButtonContainer>

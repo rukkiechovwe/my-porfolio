@@ -29,6 +29,19 @@ export interface IContact {
   urls: (Link & { title: string })[];
 }
 
+export type Experience = {
+  companyName: string;
+  duration: string;
+  jobTitle: string;
+  workDone: string[];
+  companyLink?: string;
+};
+
+export interface IExperience {
+  tag?: string;
+  experiences: Experience[];
+}
+
 export type Link = {
   icon: React.ReactElement;
   url: string;
@@ -58,6 +71,7 @@ export interface IApp {
   hero: IHero;
   about: IAbout;
   contact: IContact;
+  experience: IExperience;
   project: IProject;
   socials: ISocials;
 }

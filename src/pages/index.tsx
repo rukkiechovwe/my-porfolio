@@ -1,16 +1,12 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import React from "react";
-import { ThemeProvider } from "styled-components";
+
+import Layout from "../components/Layout";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Project from "../components/Project";
-import Socials from "../components/Socials";
-import { useThemeContext } from "../context/theme_context";
-import AppStyles from "../styles/globalstyles";
 import { IApp } from "../utils/interfaces";
 
 type Props = {
@@ -18,24 +14,14 @@ type Props = {
 };
 
 const Home: NextPage<Props> = ({ app }: Props) => {
-  const { mode: theme } = useThemeContext();
   return (
-    <ThemeProvider theme={theme!}>
-      <AppStyles />
-      <Head>
-        <title>{app.title}</title>
-        <meta name="description" content={app.desc} />
-        <link rel="icon" href="/favicon_.ico" />
-      </Head>
-      <Header />
-      <Socials socials={app.socials} />
+    <Layout app={app}>
       <Hero hero={app.hero} />
-
-      <About about={app.about} />
-      <Project project={app.project} />
-      <Contact contact={app.contact} />
+      {/* <About about={app.about} /> */}
+      {/* <Project project={app.project} /> */}
+      {/* <Contact contact={app.contact} /> */}
       <Footer />
-    </ThemeProvider>
+    </Layout>
   );
 };
 

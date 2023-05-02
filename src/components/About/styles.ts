@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { ITheme } from "../../utils/interfaces";
+import { FloatText } from "../../styles/commonstyles";
 
 export const Container = styled.div`
   box-sizing: border-box;
@@ -12,10 +13,10 @@ export const Container = styled.div`
   min-height: 80vh;
 
   @media only screen and (min-width: 570px) {
-    padding: 2rem 2.54rem;
+    padding: 0 2.54rem 4rem;
   }
 
-  @media only screen and (min-width: 765px) {
+  @media only screen and (min-width: 768px) {
     padding: 2rem 3.54rem;
   }
   @media only screen and (min-width: 1024px) {
@@ -26,88 +27,76 @@ export const Container = styled.div`
   }
 `;
 export const AboutContainer = styled.div`
-  text-align: center;
-  width: 80%;
-  padding: 0px 0 40px 0;
-  @media only screen and (max-width: 765px) {
-    text-align: center;
-    width: 100%;
+  text-align: left;
+  width: 100%;
+  padding: 0 0 10px 0;
+  @media only screen and (min-width: 768px) {
+    padding: 30px 0 10px 0;
+    width: 80%;
   }
 `;
+
+export const HeaderText = styled(FloatText)`
+`;
+
+export const ParaText = styled.p`
+  color: ${(props) => (props.theme as ITheme).paragraphTextColor};
+  font-size: 15px;
+  text-align: left;
+  line-height: 26px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 17px;
+    line-height: 32px;
+  }
+`;
+
 export const SkillContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 0 40px 0;
-  text-align: left;
   width: 100%;
   text-transform: capitalize;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 1px;
-  @media only screen and (max-width: 765px) {
-    width: 100%;
+  font-size: 15px;
+  text-align: left;
+  line-height: 22px;
+
+  @media only screen and (min-width: 768px) {
+    width: 80%;
+    // font-size: 17px;
   }
   @media only screen and (max-width: 570px) {
-    font-size: 16px;
-    padding: 0 0 60px 0;
+    padding: 0 0 20px 0;
   }
 `;
 export const SkillList = styled.div`
-  margin-top: 25px;
+  // margin-top: 25px;
   width: 100%;
   display: grid;
   grid-template: 1fr / 100%;
   gap: 20px;
-
-  @media only screen and (min-width: 670px) {
-    grid-template: 1fr / 50% 50%;
-  }
 `;
 
 export const SkillItem = styled.div`
   display: flex;
   font-weight: 200;
-  padding: 15px;
-  background-color: ${(props) => props.theme.buttonColor};
-  box-shadow: ${(props) => props.theme.boxShadow};
-  border-radius: 5px;
+  // padding: 15px;
+  // background-color: ${(props) => props.theme.buttonColor};
+  // box-shadow: ${(props) => props.theme.boxShadow};
+  // border-radius: 5px;
 
   flex-direction: column;
   @media only screen and (min-width: 570px) {
     flex-direction: row;
   }
 `;
-export const HeaderText = styled.h1`
-  color: ${(props) => (props.theme as ITheme).headerTextColor};
-  font-size: 36px;
-  font-weight: 500;
-  @media only screen and (max-width: 570px) {
-    font-size: 30px;
-  }
-`;
-
-export const ParaText = styled.p`
-  color: ${(props) => (props.theme as ITheme).paragraphTextColor};
-  font-weight: 100;
-  text-align: center;
-  line-height: 26px;
-  letter-spacing: 1px;
-
-  @media only screen and (min-width: 765px) {
-    //  padding: 0 4%;
-  }
-`;
 
 export const ColoredText = styled.span`
-  color: ${(props) => (props.theme as ITheme).highlightTextColor};
-`;
-export const ColoredLinkText = styled.a`
   color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;
 export const SkillTitleText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   margin: 0;
-  text-align: center;
+  text-align: left;
 `;
 export const DataNameText = styled.span`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
@@ -115,23 +104,4 @@ export const DataNameText = styled.span`
 `;
 export const SkillText = styled.span`
   color: ${(props) => (props.theme as ITheme).titleColor};
-`;
-
-export const Image = styled.img`
-  position: absolute;
-`;
-
-export const HandSignImage = styled(Image)`
-  max-width: 18.625em;
-  bottom: 10px;
-  left: 0;
-  display: none;
-  @media only screen and (min-width: 765px) {
-    display: block;
-  }
-`;
-
-export const AboutImage = styled(Image)`
-  width: 11.625em;
-  position: relative;
 `;

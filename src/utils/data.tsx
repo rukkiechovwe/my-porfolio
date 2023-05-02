@@ -22,7 +22,7 @@ const app: IApp = {
   about: {
     tag: "about",
     name: "Ufuoma",
-    bio: "I'm a creative frontend developer with 2+years of experience in working with diverse and talented teams to deliver exceptional web experiences that are both visually appealing and technically demanding.",
+    bio: "As a frontend developer, I possess a creative mindset that allows me to design visually appealing websites, with great attention to detail. I have collaborated with talented people to deliver exceptional web products that are both aesthetically pleasing and technically demanding. <p> My foremost priority is delivering outstanding results that exceed the expectations of my clients and employers. I'm proficient and actively working with the tools and skillset listed below.<p/>",
 
     skills: [
       {
@@ -34,7 +34,7 @@ const app: IApp = {
           },
           {
             name: "frontend",
-            data: ["reactjs", "vuejs", "nextjs", "nuxtjs"],
+            data: ["reactJS", "vueJS", "nextJS", "nuxtJS"],
           },
           {
             name: "state-management",
@@ -42,13 +42,14 @@ const app: IApp = {
           },
           {
             name: "styling",
-            data: ["CSS3", "styled-components", "tailwindcss", "MUI"],
+            data: ["CSS3", "tailwindCSS", "MUI"],
           },
-
-          {
-            name: "database",
-            data: ["firebase", "graphql"],
-          },
+          // {
+          //   name: "database",
+          //   data: ["firebase", "graphql"],
+          // },
+          // { name: "animation", data: ["GSAP"] },
+          { name: "others", data: ["git", "GSAP", "firebase"] },
         ],
       },
     ],
@@ -76,6 +77,55 @@ const app: IApp = {
         icon: <GithubLogo size={22} />,
         url: "https://github.com/rukkiechovwe",
         title: "Github",
+      },
+    ],
+  },
+
+  experience: {
+    tag: "experience",
+    experiences: [
+      {
+        companyName: "Metadapp",
+        companyLink: "",
+        duration: "September 2022 - Present",
+        jobTitle: "Frontend Developer",
+        workDone: [
+          "Built and implemented several successful features such as Risk management, Portfolio management,Referral system and Revoke approval on Metadapp web3 application.",
+          "Worked closely with design, product, and backend teams to oversee and maintain the Metadapp web3 dashboard.",
+          "Worked closely with customer success team to triage, troubleshoot and resolve customer facing issues by providing technical support, guidance, and implementing solutions in a timely manner.",
+        ],
+      },
+      {
+        companyName: "GreenTech",
+        companyLink: "",
+        duration: "September 2021 - April 2022",
+        jobTitle: "Frontend Developer",
+        workDone: [
+          "Involved in designing, implementing features and API integration.",
+          "Collaborated closely with the design and product teams to create a professional, user-friendly consultancy website.",
+          "Managed and maintained the Naija Kobo Market website.",
+        ],
+      },
+      {
+        companyName: "Kivifood",
+        companyLink: "",
+        duration: "May 2021 - February 2022",
+        jobTitle: "Frontend Developer/UI Designer",
+        workDone: [
+          "Devised and implemented the Kivifood marketing website and conducted several experiments to drive growth and engagement.",
+          "Worked together with the mobile team to design the Kivifood mobile app interface.",
+        ],
+      },
+      {
+        companyName: "Xigma",
+        companyLink: "",
+        duration: "April 2021 - July 2021",
+        jobTitle: "Frontend Intern",
+        workDone: [
+          "Designed and developed the Xigma solar service website.",
+          "Teamed up with the product team to design and make iterations on the mobile interface.",
+          "Led a training program for a group of 10 interns, providing them with an in-depth introduction to frontend development.",
+        ],
       },
     ],
   },

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ITheme } from "../../utils/interfaces";
+import { FloatText } from "../../styles/commonstyles";
 
 export const Container = styled.div`
   box-sizing: border-box;
@@ -8,8 +9,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  min-height: 20vh;
+  min-height: 85vh;
   margin: 0 auto;
 
   @media only screen and (min-width: 570px) {
@@ -28,29 +28,20 @@ export const Container = styled.div`
   }
 `;
 
-export const HeaderText = styled.h1`
-  color: ${(props) => (props.theme as ITheme).headerTextColor};
-  font-size: 36px;
-  font-weight: 500;
-  @media only screen and (max-width: 570px) {
-    font-size: 30px;
-  }
+export const HeaderText = styled(FloatText)`
 `;
 
 export const SpanText = styled.span`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   font-weight: 200;
   padding: 0;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 1px;
+  line-height: 24px;
   @media only screen and (max-width: 570px) {
     font-size: 16px;
   }
-  @media only screen and (min-width: 765px) {
-    padding: 0 4%;
-  }
+
 `;
 
 export const ColoredText = styled.span`

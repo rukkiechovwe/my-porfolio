@@ -9,12 +9,15 @@ const About: React.FC<Props> = ({ about: { tag, name, bio, skills } }) => {
   return (
     <S.Container id={tag}>
       <S.AboutContainer>
-        <S.HeaderText>A little bit about me</S.HeaderText>
+        <S.HeaderText>
+          A little bit <S.ColoredText>about me.</S.ColoredText>
+        </S.HeaderText>
+
         <S.ParaText dangerouslySetInnerHTML={{ __html: bio }}></S.ParaText>
       </S.AboutContainer>
       {skills.map((item, i) => (
         <S.SkillContainer key={i}>
-          <S.SkillTitleText>{item.title}:</S.SkillTitleText>
+          {/* <S.SkillTitleText>{item.title}:</S.SkillTitleText> */}
           <S.SkillList>
             {item.list.map((skill, index) => (
               <S.SkillItem key={[skill, index].join(".")}>

@@ -3,6 +3,7 @@ import { ITheme } from "./interfaces";
 export const lightTheme: ITheme = {
   bgColor: "#fff",
   buttonPrimaryColor: "#00b968",
+  headerTextColor: "#111",
   textColor: "grey",
   highlightTextColor: "#00b968",
   titleColor: "#000",
