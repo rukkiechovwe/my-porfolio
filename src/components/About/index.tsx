@@ -29,7 +29,6 @@ const About: React.FC<Props> = ({ about: { tag, name, bio, skills } }) => {
         </S.SkillContainer>
       ))}
 
-      {/* <S.HandSignImage src="/assets/images/okay-hand.png" /> */}
     </S.Container>
   );
 };

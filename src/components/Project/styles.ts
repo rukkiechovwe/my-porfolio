@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ITheme } from "../../utils/interfaces";
+import { FloatText } from "../../styles/commonstyles";
 
 export const Container = styled.div`
   box-sizing: border-box;
@@ -7,10 +8,15 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  margin: 0 auto;
+
   @media only screen and (min-width: 570px) {
     padding: 2rem 2.54rem;
+  }
+
+  @media only screen and (min-width: 680px) {
+    width: 80%;
   }
   @media only screen and (min-width: 765px) {
     padding: 2rem 3.54rem;
@@ -24,52 +30,75 @@ export const Container = styled.div`
 `;
 
 export const Projects = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  ::after {
-    content: "";
-    display: block;
-    margin-left: 65%;
-    margin-left: 50%;
+  column-count: 1;
+  display: block;
+  column-gap: 1.5rem;
+  margin: 2rem 0 0;
+
+  @media (min-width: 768px) {
+    column-count: 2;
   }
 `;
-export const Project = styled.div`
-  margin: 0;
-  padding: 1rem 0;
-  width: 100%;
-  min-width: 150px;
+
+export interface IProject {
+  url?: string;
+}
+
+export const Project = styled.div<IProject>`
+  margin: 0 0 1.5rem;
   height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   padding: 10px 20px;
   border-radius: 5px;
-  margin: 10px 0;
-  border: ${(props) => props.theme.borderColor};
+  // border: ${(props) => props.theme.borderColor};
+  background: url(${(props) => props.url});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 
-    @media (min-width: 570px) {
-      padding: 3rem 1.6rem
-      margin: 20px;
-    }
+  ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000036;
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  &:hover::after {
+    background: #00000052;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8596171745065213) 0%,
+      rgba(0, 0, 0, 0.09491129215358018) 92%,
+      rgba(0, 0, 0, 0.09491129215358018) 100%
+    );
+  }
+
+  div {
+    z-index: 2;
+    transition: 200ms;
+    transform: translateY(200px);
+  }
+
+  &:hover div {
+    transform: translateY(0);
+  }
+
+  @media (min-width: 570px) {
+    padding: 2.5rem 1.6rem;
+  }
   @media (min-width: 670px) {
-    width: 38%;
-    margin: 1.5%;
-  }
-  @media (min-width: 780px) {
-    width: 39%;
-  }
-  @media (min-width: 860px) {
-    width: 39%;
-  }
-  @media (min-width: 1024px) {
-    width: 40%;
-  }
-  @media (min-width: 1200px) {
-    min-width: 41.3%;
-    height: 270px;
+    &:nth-child(3n + 1) {
+      height: 360px;
+    }
   }
 `;
 export const Icons = styled.div`
@@ -88,8 +117,8 @@ export const Spaced = styled.div<{ height: string }>`
 `;
 
 export const Tag = styled.div`
-  background: ${(props) => (props.theme as ITheme).titleColor};
-  color: ${(props) => (props.theme as ITheme).tooltipColor};
+  background: rgb(105, 104, 105);
+  color: ${(props) => (props.theme as ITheme).white};
   width: max-content;
   border-radius: 5px;
   padding: 3px 8px;
@@ -97,25 +126,16 @@ export const Tag = styled.div`
   font-size: 13px;
 `;
 
-// Texts
-export const HeaderText = styled.h1`
-  color: ${(props) => (props.theme as ITheme).headerTextColor};
-  font-size: 36px;
-  font-weight: 500;
-  @media only screen and (max-width: 570px) {
-    font-size: 30px;
-  }
-`;
+export const HeaderText = styled(FloatText)``;
 
 export const ColoredText = styled.span`
   color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;
 
 export const TitleText = styled.h3`
-  color: ${(props) => (props.theme as ITheme).titleColor};
+  color: ${(props) => (props.theme as ITheme).white};
   text-transform: capitalize;
-  letter-spacing: 3px;
-  margin: 0 0 20px;
+  margin: 0;
   font-size: 30px;
   font-weight: 500;
   @media only screen and (max-width: 570px) {
@@ -124,21 +144,20 @@ export const TitleText = styled.h3`
 `;
 
 export const DescText = styled.p`
-  color: ${(props) => (props.theme as ITheme).projectDescColor};
-  margin: 0 0 20px;
-  font-weight: 200;
+  // color: ${(props) => (props.theme as ITheme).grey};
+  color: rgb(213, 213, 213);
+  margin: 0 0 10px;
   padding: 0;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
-  letter-spacing: 1px;
   @media only screen and (max-width: 570px) {
-    font-size: 15px;
+    font-size: 14px;
   }
 `;
 
 export const IconText = styled.a`
   color: ${(props) => (props.theme as ITheme).titleColor};
-  color: ${(props) => (props.theme as ITheme).projectDescColor};
+  color: ${(props) => (props.theme as ITheme).grey};
   padding-right: 15px;
 
   :hover {

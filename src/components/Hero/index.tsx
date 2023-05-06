@@ -95,8 +95,6 @@ const Hero: React.FC<HeroProps> = ({
       </S.Greetings>
       <S.HeaderText>
         {`${text} ${catchPhrase}`.split("").map((text, i) => {
-          console.log(text === " " ? "space here" : text);
-
           return text === " " ? (
             <span className="name" key={i}>
               {" "}

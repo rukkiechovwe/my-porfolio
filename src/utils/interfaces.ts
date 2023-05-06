@@ -52,6 +52,7 @@ export type Project = {
   title: string;
   desc: string;
   tags: string[];
+  imgUrl?: string;
   links: Link[];
 };
 
@@ -92,4 +93,6 @@ export interface ITheme {
   tooltipColor?: string;
   borderColor?: string;
   boxShadow?: string;
+  white?: string;
+  grey?:string
 }

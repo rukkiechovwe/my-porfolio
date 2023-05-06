@@ -11,29 +11,35 @@ const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
   return (
     <S.Container id={tag}>
       <S.HeaderText>
-        Featured <S.ColoredText>{tag}</S.ColoredText>
+        Featured <S.ColoredText>{tag}s.</S.ColoredText>
       </S.HeaderText>
       <S.Projects>
         {projects.map((item, i) => (
-          <S.Project key={i}>
-            <S.Spaced height="14px" />
-            <S.TitleText>
-              {item.title}
-              <ArrowUpRight size={22} />
-            </S.TitleText>
-            <S.TagRow>
-              {item.tags.map((tag, i) => (
-                <S.Tag key={[tag, i].join(".")}>{tag}</S.Tag>
-              ))}
-            </S.TagRow>
-            <S.DescText>{item.desc}</S.DescText>
-            <S.Icons>
-              {item.links.map((link, i) => (
-                <S.IconText key={[link.url, i].join(".")} href={link.url} target="_blank">
-                  <Tooltip text={link.tooltip}>{link.icon}</Tooltip>
-                </S.IconText>
-              ))}
-            </S.Icons>
+          <S.Project key={i} url={item.imgUrl}>
+            <div>
+              <S.TitleText>
+                {item.title}
+                <ArrowUpRight size={22} />
+              </S.TitleText>
+              <S.DescText>{item.desc}</S.DescText>
+
+              <S.TagRow>
+                {item.tags.map((tag, i) => (
+                  <S.Tag key={[tag, i].join(".")}>{tag}</S.Tag>
+                ))}
+              </S.TagRow>
+              <S.Icons>
+                {item.links.map((link, i) => (
+                  <S.IconText
+                    key={[link.url, i].join(".")}
+                    href={link.url}
+                    target="_blank"
+                  >
+                    <Tooltip text={link.tooltip}>{link.icon}</Tooltip>
+                  </S.IconText>
+                ))}
+              </S.Icons>
+            </div>
           </S.Project>
         ))}
       </S.Projects>

@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import React from "react";
 
 import Layout from "../components/Layout";
-import { IApp } from "../utils/interfaces";
 import Experience from "../components/Experience";
+import { IApp } from "../utils/interfaces";
 
 type Props = {
   app: IApp;
@@ -11,7 +11,7 @@ type Props = {
 
 const ExperiencePage: NextPage<Props> = ({ app }: Props) => {
   return (
-    <Layout app={app} pageTitle={`About Me | ${app.title}`}>
+    <Layout app={app} pageTitle={`Experience | ${app.title}`}>
       <Experience experience={app.experience} />
     </Layout>
   );

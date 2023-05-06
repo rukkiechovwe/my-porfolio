@@ -11,6 +11,8 @@ export const lightTheme: ITheme = {
   tooltipColor: "#fff",
   borderColor: "1px solid #eaeaea96",
   boxShadow: "3px 3px 20px #d2d2d247",
+  white: "#fff",
+  grey: "#dcdcdc",
 };
 
 export const darkTheme: ITheme = {
@@ -28,4 +30,6 @@ export const darkTheme: ITheme = {
   tooltipColor: "#000",
   borderColor: "1px solid #26262694",
   boxShadow: "3px 3px 20px #0404045e",
+  white: "#fff",
+  grey:'#dcdcdc'
 };

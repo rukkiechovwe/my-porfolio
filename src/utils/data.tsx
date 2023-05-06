@@ -135,8 +135,9 @@ const app: IApp = {
     projects: [
       {
         title: "Fem GPT",
-        tags: ["react", "TailwindCSS", "AI"],
+        tags: ["react", "tailwind CSS", "AI"],
         desc: "Female health advisor",
+        imgUrl: "assets/images/Screenshot-FemGPT.png",
         links: [
           {
             icon: <Globe size={24} />,
@@ -150,22 +151,12 @@ const app: IApp = {
           },
         ],
       },
-      {
-        title: "Metadapp",
-        tags: ["react", "MUI", "Web3"],
-        desc: "An all in one Web3 dashboard",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://metadapp.com",
-            tooltip: "View the web",
-          },
-        ],
-      },
+
       {
         title: "RK-Store",
         tags: ["react", "styled-component"],
         desc: "An elegant ecommerce application.",
+        imgUrl: "assets/images/Screenshot-RK-Store1.png",
         links: [
           {
             icon: <Globe size={24} />,
@@ -184,6 +175,7 @@ const app: IApp = {
         title: "kivifood",
         tags: ["react", "styled-component"],
         desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
+        imgUrl: "assets/images/Screenshot-Kivi1.png",
         links: [
           {
             icon: <Globe size={24} />,
@@ -192,25 +184,158 @@ const app: IApp = {
           },
         ],
       },
+      {
+        title: "TodoApp",
+        tags: ["react"],
+        desc: "Todo list application.",
+        imgUrl: "assets/images/Screenshot-TodoApp.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://rukkiechovwe.github.io/myapp",
+            tooltip: "View the web",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/myapp",
+            tooltip: "View on github",
+          },
+        ],
+      },
+
+      {
+        title: "Icompresser",
+        tags: ["HTML", "CSS", "JS"],
+        desc: "Icompresser website",
+        imgUrl: "assets/images/Screenshot-ImgCompresser1.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.icompresser.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+      //Icompresser
+      //html, css, js
+      //https://github.com/rukkiechovwe/icompressor-project
+      //https://www.icompresser.com/
+      // }
+
+      {
+        title: "Metadapp",
+        tags: ["react", "MUI", "Web3"],
+        desc: "An all in one Web3 dashboard",
+        imgUrl: "assets/images/Screenshot-Metadapp.png",
+
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://metadapp.com",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
+        title: "Muqee",
+        tags: ["react", "nextJS", "tailwind CSS"],
+        desc: "Content creation on Autopilot.",
+        imgUrl: "assets/images/Screenshot-Muqee1.png",
+
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://muqee.ai",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
+        title: "lastprice",
+        tags: ["react", "redux", "ant design"],
+        desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
+        imgUrl: "assets/images/Screenshot-Lastprice.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://amazing-torvalds-02adef.netlify.app",
+            tooltip: "View the web",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/iamstanlee/last-price",
+            tooltip: "View on github",
+          },
+        ],
+      },
+
+      //{
+      //   title: "TodoApp",
+      //   react
+      // Screenshot-TodoApp
+      //https://github.com/rukkiechovwe/myapp
+      //https://rukkiechovwe.github.io/myapp
+      //}
+
+      {
+        title: "Advice App",
+        tags: ["vue"],
+        desc: "Get life advices with this application.",
+        imgUrl: "assets/images/Screenshot-AdviceApp.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://rukkies-adviceapp.netlify.app",
+            tooltip: "View the web",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/advice_app_vue3",
+            tooltip: "View on github",
+          },
+        ],
+      },
+
+      //{
+      //   title: "Advice App",
+      //   vue
+      //https://github.com/rukkiechovwe/advice_app_vue3
+      //https://rukkies-adviceapp.netlify.app
+      // }
 
       // {
-      //   title: "lastprice",
-      //   tags: ["react", "redux", "ant design"],
-      //   desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
-      //   links: [
-      //     {
-      //       icon: <Globe size={24} />,
-      //       url: "https://amazing-torvalds-02adef.netlify.app",
-      //       tooltip: "View the web",
-      //     },
 
-      //     {
-      //       icon: <GithubLogo size={24} />,
-      //       url: "https://github.com/iamstanlee/last-price",
-      //       tooltip: "View on github",
-      //     },
-      //   ],
-      // },
+      //{
+      // Art gallery
+      // html, css, js
+      // https://github.com/rukkiechovwe/Art-gallery
+      // https://rukkies-art-gallery.netlify.app/
+      // }
+
+      {
+        title: "Art gallery",
+        tags: ["HTML", "CSS", "JS"],
+        desc: "Simple art gallery website template",
+        imgUrl: "assets/images/Screenshot-ArtGallery.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://rukkies-art-gallery.netlify.app",
+            tooltip: "View the web",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/Art-gallery",
+            tooltip: "View on github",
+          },
+        ],
+      },
     ],
   },
 

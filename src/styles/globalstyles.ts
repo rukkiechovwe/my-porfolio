@@ -69,6 +69,15 @@ const AppStyles = createGlobalStyle`
       display: block;
    }
 
+   .trail{
+      background-color: ${(props) =>
+        (props.theme as ITheme).highlightTextColor};
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      border-radius: 50%;
+   }
+
 
 //    svg text {
 //   font-family: Lora;
