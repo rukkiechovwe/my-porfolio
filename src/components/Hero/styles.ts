@@ -42,6 +42,7 @@ export const HeaderText = styled.h1`
     line-height: 104px;
   }
 `;
+
 export const Greetings = styled.h4`
   text-transform: capitalize;
   font-size: 18px;
@@ -53,6 +54,7 @@ export const Greetings = styled.h4`
     font-size: 20px;
   }
 `;
+
 export const DescText = styled.h4`
   text-transform: capitalize;
   font-size: 14px;
@@ -63,10 +65,6 @@ export const DescText = styled.h4`
   @media only screen and (min-width: 400px) {
     font-size: 16px;
   }
-`;
-
-export const ColoredText = styled.span`
-  color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;
 
 const bounceLetters = keyframes`

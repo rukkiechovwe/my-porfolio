@@ -156,7 +156,7 @@ const app: IApp = {
         title: "RK-Store",
         tags: ["react", "styled-component"],
         desc: "An elegant ecommerce application.",
-        imgUrl: "assets/images/Screenshot-RK-Store1.png",
+        imgUrl: "assets/images/Screenshot-RK-Store.png",
         links: [
           {
             icon: <Globe size={24} />,
@@ -175,7 +175,7 @@ const app: IApp = {
         title: "kivifood",
         tags: ["react", "styled-component"],
         desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
-        imgUrl: "assets/images/Screenshot-Kivi1.png",
+        imgUrl: "assets/images/Screenshot-Kivi.png",
         links: [
           {
             icon: <Globe size={24} />,
@@ -208,7 +208,7 @@ const app: IApp = {
         title: "Icompresser",
         tags: ["HTML", "CSS", "JS"],
         desc: "Icompresser website",
-        imgUrl: "assets/images/Screenshot-ImgCompresser1.png",
+        imgUrl: "assets/images/Screenshot-ImgCompresser.png",
         links: [
           {
             icon: <Globe size={24} />,
@@ -242,7 +242,7 @@ const app: IApp = {
         title: "Muqee",
         tags: ["react", "nextJS", "tailwind CSS"],
         desc: "Content creation on Autopilot.",
-        imgUrl: "assets/images/Screenshot-Muqee1.png",
+        imgUrl: "assets/images/Screenshot-Muqee.png",
 
         links: [
           {

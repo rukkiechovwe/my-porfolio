@@ -1,17 +1,19 @@
 import { IAbout } from "../../utils/interfaces";
 import * as S from "./styles";
 
+import { FloatText, ColoredText } from "../../styles/commonstyles";
+
 type Props = {
   about: IAbout;
 };
 
 const About: React.FC<Props> = ({ about: { tag, name, bio, skills } }) => {
   return (
-    <S.Container id={tag}>
+    <S.AContainer id={tag}>
       <S.AboutContainer>
-        <S.HeaderText>
-          A little bit <S.ColoredText>about me.</S.ColoredText>
-        </S.HeaderText>
+        <FloatText>
+          A little bit <ColoredText>about me.</ColoredText>
+        </FloatText>
 
         <S.ParaText dangerouslySetInnerHTML={{ __html: bio }}></S.ParaText>
       </S.AboutContainer>
@@ -28,8 +30,7 @@ const About: React.FC<Props> = ({ about: { tag, name, bio, skills } }) => {
           </S.SkillList>
         </S.SkillContainer>
       ))}
-
-    </S.Container>
+    </S.AContainer>
   );
 };
 

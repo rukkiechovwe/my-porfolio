@@ -1,20 +1,29 @@
 import { FC, useState } from "react";
+import { Moon, SunDim } from "phosphor-react";
 import Image from "next/Image";
+
 import * as S from "./styles";
+import { useThemeContext } from "../../context/theme_context";
 
 const navItems = ["/", "About", "Experience", "Project", "Contact"];
 
 const Header: FC = () => {
+  const { darkMode, toggleTheme } = useThemeContext();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <S.Container>
       <S.Bar>
         <Image src="/assets/images/logo1.png" alt="" width="30" height="30" />
-        <S.OpenMenu onClick={() => setIsOpen(true)}>
-          <span />
-          <span />
-        </S.OpenMenu>
+        <S.ThemeWrapper>
+          <S.Theme onClick={(_e) => toggleTheme?.()}>
+            {darkMode ? <SunDim size={24} /> : <Moon size={24} />}
+          </S.Theme>
+          <S.OpenMenu onClick={() => setIsOpen(true)}>
+            <span />
+            <span />
+          </S.OpenMenu>
+        </S.ThemeWrapper>
       </S.Bar>
       <S.LinkGroup open={isOpen}>
         <S.CloseMenu onClick={() => setIsOpen(false)}>

@@ -2,6 +2,8 @@ import { ArrowUpRight } from "phosphor-react";
 import { IProject } from "../../utils/interfaces";
 import Tooltip from "../Tooltip";
 import * as S from "./styles";
+import { FloatText, ColoredText } from "../../styles/commonstyles";
+
 
 type ProjectProps = {
   project: IProject;
@@ -9,10 +11,10 @@ type ProjectProps = {
 
 const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
   return (
-    <S.Container id={tag}>
-      <S.HeaderText>
-        Featured <S.ColoredText>{tag}s.</S.ColoredText>
-      </S.HeaderText>
+    <S.PContainer id={tag}>
+      <FloatText>
+        Featured <ColoredText>{tag}s.</ColoredText>
+      </FloatText>
       <S.Projects>
         {projects.map((item, i) => (
           <S.Project key={i} url={item.imgUrl}>
@@ -43,7 +45,7 @@ const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
           </S.Project>
         ))}
       </S.Projects>
-    </S.Container>
+    </S.PContainer>
   );
 };
 

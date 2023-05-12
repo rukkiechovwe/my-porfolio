@@ -1,14 +1,8 @@
 import styled from "styled-components";
 import { ITheme } from "../../utils/interfaces";
-import { FloatText } from "../../styles/commonstyles";
+import { Container } from "../../styles/commonstyles";
 
-export const Container = styled.div`
-  box-sizing: border-box;
-  position: relative;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+export const CContainer = styled(Container)`
   min-height: 85vh;
   margin: 0 auto;
 
@@ -23,12 +17,6 @@ export const Container = styled.div`
     padding: 2rem 5.54rem;
     max-width: 991px;
   }
-  @media only screen and (min-width: 1200px) {
-    padding: 2rem 7.54rem;
-  }
-`;
-
-export const HeaderText = styled(FloatText)`
 `;
 
 export const SpanText = styled.span`
@@ -41,11 +29,6 @@ export const SpanText = styled.span`
   @media only screen and (max-width: 570px) {
     font-size: 16px;
   }
-
-`;
-
-export const ColoredText = styled.span`
-  color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;
 
 export const ResumeContainer = styled.div`

@@ -2,6 +2,7 @@ import { ITheme } from "./interfaces";
 
 export const lightTheme: ITheme = {
   bgColor: "#fff",
+  buttonColor: "rgba(203, 203, 203, 0.2)",
   buttonPrimaryColor: "#00b968",
   headerTextColor: "#111",
   textColor: "grey",
@@ -13,11 +14,12 @@ export const lightTheme: ITheme = {
   boxShadow: "3px 3px 20px #d2d2d247",
   white: "#fff",
   grey: "#dcdcdc",
+  bgImageColor: "#111",
 };
 
 export const darkTheme: ITheme = {
   bgColor: "#111",
-  buttonColor: "rgba(255,255,255,0.02)",
+  buttonColor: "rgba(255, 255, 255, 0.08)",
   buttonPrimaryColor: "#00b968",
   buttonHoverColor: "#00b968",
   buttonHoverTextColor: "#fff",
@@ -31,5 +33,5 @@ export const darkTheme: ITheme = {
   borderColor: "1px solid #26262694",
   boxShadow: "3px 3px 20px #0404045e",
   white: "#fff",
-  grey:'#dcdcdc'
+  grey: "#dcdcdc",
 };

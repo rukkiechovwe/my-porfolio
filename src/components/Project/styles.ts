@@ -1,31 +1,15 @@
 import styled from "styled-components";
 import { ITheme } from "../../utils/interfaces";
-import { FloatText } from "../../styles/commonstyles";
+import { Container } from "../../styles/commonstyles";
 
-export const Container = styled.div`
-  box-sizing: border-box;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+export const PContainer = styled(Container)`
   min-height: 100vh;
   margin: 0 auto;
-
   @media only screen and (min-width: 570px) {
     padding: 2rem 2.54rem;
   }
-
   @media only screen and (min-width: 680px) {
     width: 80%;
-  }
-  @media only screen and (min-width: 765px) {
-    padding: 2rem 3.54rem;
-  }
-  @media only screen and (min-width: 1024px) {
-    padding: 2rem 5.54rem;
-  }
-  @media only screen and (min-width: 1200px) {
-    padding: 2rem 7.54rem;
   }
 `;
 
@@ -70,6 +54,13 @@ export const Project = styled.div<IProject>`
     background: #00000036;
     z-index: 1;
     border-radius: 5px;
+    background: #00000052;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8596171745065213) 0%,
+      rgba(0, 0, 0, 0.09491129215358018) 92%,
+      rgba(0, 0, 0, 0.09491129215358018) 100%
+    );
   }
 
   &:hover::after {
@@ -85,7 +76,7 @@ export const Project = styled.div<IProject>`
   div {
     z-index: 2;
     transition: 200ms;
-    transform: translateY(200px);
+    transform: translateY(100px);
   }
 
   &:hover div {
@@ -112,10 +103,6 @@ export const TagRow = styled.div`
   flex-direction: row;
 `;
 
-export const Spaced = styled.div<{ height: string }>`
-  height: ${(props) => props.height};
-`;
-
 export const Tag = styled.div`
   background: rgb(105, 104, 105);
   color: ${(props) => (props.theme as ITheme).white};
@@ -124,12 +111,6 @@ export const Tag = styled.div`
   padding: 3px 8px;
   margin: 0 8px 15px 0;
   font-size: 13px;
-`;
-
-export const HeaderText = styled(FloatText)``;
-
-export const ColoredText = styled.span`
-  color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;
 
 export const TitleText = styled.h3`
@@ -144,7 +125,6 @@ export const TitleText = styled.h3`
 `;
 
 export const DescText = styled.p`
-  // color: ${(props) => (props.theme as ITheme).grey};
   color: rgb(213, 213, 213);
   margin: 0 0 10px;
   padding: 0;

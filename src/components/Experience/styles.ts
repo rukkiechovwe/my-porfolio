@@ -1,56 +1,16 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { ITheme } from "../../utils/interfaces";
-import { FloatText } from "../../styles/commonstyles";
+import { Container } from "../../styles/commonstyles";
 
-export const Container = styled.div`
-  box-sizing: border-box;
-  position: relative;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+export const EContainer = styled(Container)`
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
 
-  @media only screen and (min-width: 570px) {
-    padding: 0 2.54rem 4rem;
-  }
-
   @media only screen and (min-width: 680px) {
     width: 80%;
   }
-
-  @media only screen and (min-width: 768px) {
-    padding: 2rem 3.54rem;
-  }
-  @media only screen and (min-width: 1024px) {
-    padding: 2rem 5.54rem;
-  }
-  @media only screen and (min-width: 1200px) {
-    padding: 2rem 7.54rem;
-  }
 `;
-
-const float = keyframes`
-  0%{
-    transform: skew(0, 0deg);
-  }
-  40%{
-    transform: skew(-7deg, 0deg);
-  }
-  50% {
-		transform: skew(7deg, 0deg);
-	}
-  60% {
-		transform: skew(-7deg, 0deg);
-	}
-  100% {
-		transform: skew(0, 0deg);
-	}
-`;
-
-export const HeaderText = styled(FloatText)``;
 
 export const EperienceContainer = styled.div`
   text-align: left;
@@ -108,9 +68,7 @@ export const TabItem = styled.div<ITabItem>`
 export const TabContent = styled.div`
   p {
     margin: 0;
-
     font-size: 14px !important;
-    // font-family: "AtypText";
   }
 `;
 
@@ -139,6 +97,7 @@ export const ExperienceDuration = styled.p`
 export const WorkDoneList = styled.ul`
   padding: 0 0 0 15px;
 `;
+
 export const WorkDoneItem = styled.li`
   color: ${(props) => (props.theme as ITheme).projectDescColor};
   font-size: 15px !important;
@@ -147,7 +106,4 @@ export const WorkDoneItem = styled.li`
   @media only screen and (min-width: 768px) {
     font-size: 16px !important;
   }
-`;
-export const ColoredText = styled.span`
-  color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;

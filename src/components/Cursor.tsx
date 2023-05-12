@@ -1,7 +1,14 @@
 const Cursor = () => {
+  // remove cursor element from dom if they exist
+  const cursor = document.querySelectorAll(".trail");
+  if (cursor) {
+    cursor.forEach((item) => item.remove());
+  }
+
   // dots is an array of Dot objects,
   // mouse is an object used to track the X and Y position
   // of the mouse, set with a mousemove event listener below
+
   let dots: Array<any> = [],
     mouse = {
       x: 0,

@@ -1,8 +1,11 @@
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect } from "react";
+
 import { gsap } from "gsap";
 import { IHero } from "../../utils/interfaces";
 import { scrollTo } from "../../utils/scroll";
 import * as S from "./styles";
+import { ColoredText } from "../../styles/commonstyles";
+import { useRouter } from "next/dist/client/router";
 
 type HeroProps = {
   hero: IHero;
@@ -11,6 +14,8 @@ type HeroProps = {
 const Hero: React.FC<HeroProps> = ({
   hero: { text, desc, greeting, catchPhrase },
 }) => {
+  const router = useRouter();
+
   useLayoutEffect(() => {
     gsap.registerEffect({
       name: "fadeLeft",
@@ -85,13 +90,13 @@ const Hero: React.FC<HeroProps> = ({
   return (
     <S.Container>
       <S.Greetings>
-        <S.ColoredText>
+        <ColoredText>
           {greeting.split("").map((text, i) => (
             <span className="greeting" key={i}>
               {text}
             </span>
           ))}
-        </S.ColoredText>
+        </ColoredText>
       </S.Greetings>
       <S.HeaderText>
         {`${text} ${catchPhrase}`.split("").map((text, i) => {
@@ -116,7 +121,7 @@ const Hero: React.FC<HeroProps> = ({
 
       <S.ScrollButton
         className="scroll_btn"
-        onClick={(_e) => scrollTo("about")}
+        onClick={(_e) => router.replace("/about")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

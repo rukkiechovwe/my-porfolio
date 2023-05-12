@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { IExperience } from "../../utils/interfaces";
 import * as S from "./styles";
+import { FloatText, ColoredText } from "../../styles/commonstyles";
+
 
 type Props = {
   experience: IExperience;
@@ -10,10 +12,10 @@ const Experience: React.FC<Props> = ({ experience: { tag, experiences } }) => {
   const [currentItem, setCurrentItem] = useState(0);
 
   return (
-    <S.Container id={tag}>
-      <S.HeaderText>
-        Where I have <S.ColoredText>worked.</S.ColoredText>
-      </S.HeaderText>
+    <S.EContainer id={tag}>
+      <FloatText>
+        Where I have <ColoredText>worked.</ColoredText>
+      </FloatText>
       <S.EperienceContainer>
         <S.Tabs>
           {experiences.map((experience, index) => (
@@ -49,7 +51,7 @@ const Experience: React.FC<Props> = ({ experience: { tag, experiences } }) => {
             )
         )}
       </S.EperienceContainer>
-    </S.Container>
+    </S.EContainer>
   );
 };
 

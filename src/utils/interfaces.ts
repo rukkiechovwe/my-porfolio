@@ -94,5 +94,6 @@ export interface ITheme {
   borderColor?: string;
   boxShadow?: string;
   white?: string;
-  grey?:string
+  grey?: string;
+  bgImageColor?: string;
 }

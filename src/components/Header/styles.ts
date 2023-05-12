@@ -24,6 +24,10 @@ export const Bar = styled.div`
   justify-content: space-between;
   width: 100%;
 
+  div:first-child {
+    background: ${(props) => props.theme.bgImageColor};
+  }
+
   img {
     @media only screen and (min-width: 768px) {
       display: none !important;
@@ -31,16 +35,35 @@ export const Bar = styled.div`
   }
 `;
 
+export const ThemeWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  div:first-child {
+    background: transparent;
+  }
+
+  @media only screen and (min-width: 769px) {
+    display: none;
+  }
+`;
+
+export const Theme = styled.div`
+  color: ${(props) => props.theme.headerTextColor};
+  margin: 0 0 -7px;
+`;
+
 const Menu = styled.div`
   display: block;
-  color: #fff;
+  color: ${(props) => props.theme.headerTextColor};
   width: fit-content;
   align-self: end;
   cursor: pointer;
 
   & span {
     height: 3px;
-    background: #fff;
+    background: ${(props) => props.theme.headerTextColor};
     display: block;
     margin: 7px 5px;
     border-radius: 5px;
@@ -52,8 +75,7 @@ const Menu = styled.div`
 `;
 
 export const OpenMenu = styled(Menu)`
-  color: #fff;
-
+  color: ${(props) => props.theme.headerTextColor};
   & span:first-child {
     width: 30px;
   }
@@ -141,6 +163,9 @@ export const ListItem = styled.li<IListItem>`
 
 export const ListItemImg = styled(ListItem)`
   margin: 0 auto;
+  cursor: pointer;
+  background: ${(props) => props.theme.bgImageColor};
+  padding: 0;
 `;
 
 export const StyledLink = styled(Link)<IListItem>`
