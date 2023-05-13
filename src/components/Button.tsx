@@ -29,6 +29,7 @@ interface IButton {
   width?: string;
   href?: string;
   as?: "a";
+  children: React.ReactNode | string;
 }
 
 const Button: React.FC<IButton> = ({ children, onClick, isPrimary, width }) => {
