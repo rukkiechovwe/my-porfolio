@@ -4,6 +4,7 @@ interface ITooltip {
   text?: string;
   isPrimary?: boolean;
   width?: string;
+  children: React.ReactNode | string;
 }
 
 const Tooltip: React.FC<ITooltip> = ({ children, text, ...rest }) => {
