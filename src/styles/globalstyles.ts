@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 import { ITheme } from "../utils/interfaces";
 
 const AppStyles = createGlobalStyle`

@@ -1,4 +1,10 @@
-import React, { createContext, useContext, useEffect, useReducer } from "react";
+import React, {
+  ReactNode,
+  createContext,
+  useContext,
+  useEffect,
+  useReducer,
+} from "react";
 import { ITheme } from "../utils/interfaces";
 import { darkTheme, lightTheme } from "../utils/theme";
 
@@ -44,7 +50,7 @@ const themeReducer = (state: Theme, action: IAction) => {
   }
 };
 
-export const ThemeContextProvider: React.FC = ({ children }) => {
+export const ThemeContextProvider = ({ children }: any) => {
   const [theme, setTheme] = useReducer(themeReducer, INITIAL_STATE);
   const toggleTheme = () => {
     setTheme({ type: ActionType.TOGGLE_THEME });
