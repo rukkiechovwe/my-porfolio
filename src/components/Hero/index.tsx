@@ -6,6 +6,7 @@ import { scrollTo } from "../../utils/scroll";
 import * as S from "./styles";
 import { ColoredText } from "../../styles/commonstyles";
 import { useRouter } from "next/dist/client/router";
+import ScrollTo from "../ScrollTo";
 
 type HeroProps = {
   hero: IHero;
@@ -27,8 +28,8 @@ const Hero: React.FC<HeroProps> = ({
           },
           {
             opacity: 1,
-            stagger: 0.05,
-            duration: 3,
+            stagger: 0.2,
+            duration: 1,
             ease: "power4.out",
             ...config,
           }
@@ -44,20 +45,23 @@ const Hero: React.FC<HeroProps> = ({
         return gsap.fromTo(
           target,
           {
-            y: 200,
+            y: 500,
             opacity: 0,
+            stagger: 0,
+            duration: 0.05,
+            ease: "power4.out",
           },
           {
             y: 0,
             opacity: 1,
-            stagger: 0.1,
-            duration: 3,
+            stagger: 0.01,
+            duration: 1.5,
             ease: "power4.out",
             ...config,
           }
         );
       },
-      defaults: { duration: 2 },
+      defaults: { duration: 1 },
       extendTimeline: true,
     });
 
@@ -69,7 +73,8 @@ const Hero: React.FC<HeroProps> = ({
 
           {
             y: 0,
-            duration: 5,
+            duration: 3,
+            stagger: 0.05,
             ease: "power4.out",
             ...config,
           }
@@ -119,20 +124,7 @@ const Hero: React.FC<HeroProps> = ({
         ))}
       </S.DescText>
 
-      <S.ScrollButton
-        className="scroll_btn"
-        onClick={(_e) => router.replace("/about")}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="inherit"
-          height="inherit"
-          fill="#ffffff"
-          viewBox="0 0 256 256"
-        >
-          <path d="M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L120,196.69V40a8,8,0,0,1,16,0V196.69l58.34-58.35a8,8,0,0,1,11.32,11.32Z"></path>
-        </svg>
-      </S.ScrollButton>
+      <ScrollTo link="about" />
     </S.Container>
   );
 };

@@ -2,6 +2,7 @@ import { IAbout } from "../../utils/interfaces";
 import * as S from "./styles";
 
 import { FloatText, ColoredText } from "../../styles/commonstyles";
+import ScrollTo from "../ScrollTo";
 
 type Props = {
   about: IAbout;
@@ -30,6 +31,8 @@ const About: React.FC<Props> = ({ about: { tag, name, bio, skills } }) => {
           </S.SkillList>
         </S.SkillContainer>
       ))}
+
+      <ScrollTo link="experience" />
     </S.AContainer>
   );
 };

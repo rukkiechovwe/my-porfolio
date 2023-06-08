@@ -4,10 +4,12 @@ import Image from "next/image";
 
 import * as S from "./styles";
 import { useThemeContext } from "../../context/theme_context";
+import { useRouter } from "next/router";
 
 const navItems = ["/", "About", "Experience", "Project", "Contact"];
 
 const Header: FC = () => {
+  const router = useRouter()
   const { darkMode, toggleTheme } = useThemeContext();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -53,6 +55,9 @@ const Header: FC = () => {
 
               <S.StyledLink
                 href={link.toLowerCase()}
+                className={
+                  router.pathname === `/${link.toLowerCase()}` ? "active" : ""
+                }
                 // onClick={() => {
                 //   setIsOpen(false);
                 // }}

@@ -13,13 +13,24 @@ export const PContainer = styled(Container)`
   }
 `;
 
-export const Projects = styled.div`
-  column-count: 1;
-  display: block;
+export const MobileProjects = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const DeskTopProjects = styled.div`
+  display: none;
   column-gap: 1.5rem;
   margin: 2rem 0 0;
 
   @media (min-width: 768px) {
+    display: block;
     column-count: 2;
   }
 `;
@@ -76,7 +87,11 @@ export const Project = styled.div<IProject>`
   div {
     z-index: 2;
     transition: 200ms;
-    transform: translateY(100px);
+    transform: translateY(0);
+
+    @media (min-width: 768px) {
+      transform: translateY(100px);
+    }
   }
 
   &:hover div {

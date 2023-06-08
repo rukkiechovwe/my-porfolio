@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IExperience } from "../../utils/interfaces";
 import * as S from "./styles";
 import { FloatText, ColoredText } from "../../styles/commonstyles";
+import ScrollTo from "../ScrollTo";
 
 
 type Props = {
@@ -51,6 +52,8 @@ const Experience: React.FC<Props> = ({ experience: { tag, experiences } }) => {
             )
         )}
       </S.EperienceContainer>
+
+      <ScrollTo link='project' />
     </S.EContainer>
   );
 };

@@ -11,6 +11,7 @@ export const Container = styled.div`
   min-height: 400px;
   padding: 0 15px;
   position: relative;
+  overflow: hidden;
   @media only screen and (min-width: 769px) {
     padding: 0 15px;
     height: 100vh;

@@ -59,6 +59,7 @@ export type Project = {
 export interface IProject {
   tag?: string;
   projects: Project[];
+  deskTopProjects: Project[];
 }
 
 export interface ISocials {

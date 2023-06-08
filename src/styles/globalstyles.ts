@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 import { ITheme } from "../utils/interfaces";
 
 const AppStyles = createGlobalStyle`
@@ -76,6 +76,10 @@ const AppStyles = createGlobalStyle`
       width: 10px;
       position: absolute;
       border-radius: 50%;
+
+      @media only screen and (max-width: 768px) {
+         display: none;
+      }
    }
 `;
 

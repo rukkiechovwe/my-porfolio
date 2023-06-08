@@ -12,7 +12,7 @@ export const AboutContainer = styled.div`
   width: 100%;
   padding: 0 0 10px 0;
   @media only screen and (min-width: 768px) {
-    padding: 30px 0 10px 0;
+    padding: 0 0 10px 0;
     width: 80%;
   }
 `;

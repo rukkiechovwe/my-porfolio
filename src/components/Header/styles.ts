@@ -109,7 +109,7 @@ export const LinkGroup = styled.ul<ILinkGroup>`
 
   @media only screen and (max-width: 768px) {
     position: fixed;
-    background: #000;
+    background: ${(props) => props.theme.bgColor};
     z-index: 999;
     top: 0;
     left: 0;
@@ -131,34 +131,6 @@ export interface IListItem {
 export const ListItem = styled.li<IListItem>`
   margin: 0 20px;
   padding: 10px 0;
-
-  & a {
-    display: block;
-    padding: 13px 0;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 1s ease;
-    font-size: 16px;
-    text-align: center;
-    color: ${(props) =>
-      props.active ? props.theme.buttonHoverTextColor : props.theme.textColor};
-
-    @media only screen and (min-width: 769px) {
-      font-size: 14px;
-      padding: 8px 0;
-    }
-
-    &:hover {
-      opacity: 0.9;
-      cursor: pointer;
-      color: ${(props) => props.theme.highlightTextColor};
-      text-decoration: underline;
-
-      @media only screen and (min-width: 768px) {
-        text-align: left;
-      }
-    }
-  }
 `;
 
 export const ListItemImg = styled(ListItem)`
@@ -166,6 +138,10 @@ export const ListItemImg = styled(ListItem)`
   cursor: pointer;
   background: ${(props) => props.theme.bgImageColor};
   padding: 0;
+
+  a{
+    padding 4px 4px 0px !important;
+  }
 `;
 
 export const StyledLink = styled(Link)<IListItem>`
@@ -189,10 +165,10 @@ export const StyledLink = styled(Link)<IListItem>`
     cursor: pointer;
     color: ${(props) => props.theme.highlightTextColor};
     text-decoration: underline;
+  }
 
-    @media only screen and (min-width: 768px) {
-      text-align: left;
-    }
+  &.active {
+    color: ${(props) => props.theme.highlightTextColor};
   }
 `;
 
