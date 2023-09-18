@@ -150,8 +150,81 @@ const app: IApp = {
     tag: "project",
     deskTopProjects: [
       {
+        title: "Wano.finance",
+        tags: [
+          "nextjs",
+          "tailwind",
+          "supabase",
+          "postgres",
+          "metamask",
+          "solidity",
+          "layerzero",
+          "infura",
+          "truffle",
+        ],
+        desc: "Web3 omnichain payment infrastructure - Enhanced payment experience for 20M+ users in web3",
+        imgUrl: "assets/images/Screenshot-Wano.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://wano.finance/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
+        title: "MuqeeAI",
+        tags: ["react", "nextJS", "tailwind"],
+        desc: "Content creation on Autopilot.",
+        imgUrl: "assets/images/Screenshot-Muqee.png",
+
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://muqee.ai",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
+        title: "kivifood",
+        tags: ["react", "styled-component"],
+        desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
+        imgUrl: "assets/images/Screenshot-Kivi.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://kivifood.netlify.app/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
+        title: "Advice App",
+        tags: ["vue"],
+        desc: "Get life advices with this application.",
+        imgUrl: "assets/images/Screenshot-AdviceApp.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://rukkies-adviceapp.netlify.app",
+            tooltip: "View the web",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/advice_app_vue3",
+            tooltip: "View on github",
+          },
+        ],
+      },
+
+      {
         title: "Fem GPT",
-        tags: ["react", "tailwind CSS", "AI"],
+        tags: ["react", "tailwind", "AI"],
         desc: "Female health advisor",
         imgUrl: "assets/images/Screenshot-FemGPT.png",
         links: [
@@ -164,6 +237,21 @@ const app: IApp = {
             icon: <GithubLogo size={24} />,
             url: "https://github.com/rukkiechovwe/fem-gpt",
             tooltip: "View on github",
+          },
+        ],
+      },
+
+      {
+        title: "Metadapp",
+        tags: ["react", "MUI", "Web3"],
+        desc: "An all in one Web3 dashboard",
+        imgUrl: "assets/images/Screenshot-Metadapp.png",
+
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://metadapp.com",
+            tooltip: "View the web",
           },
         ],
       },
@@ -188,68 +276,6 @@ const app: IApp = {
       },
 
       {
-        title: "kivifood",
-        tags: ["react", "styled-component"],
-        desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
-        imgUrl: "assets/images/Screenshot-Kivi.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://kivifood.netlify.app/",
-            tooltip: "View the web",
-          },
-        ],
-      },
-      {
-        title: "Advice App",
-        tags: ["vue"],
-        desc: "Get life advices with this application.",
-        imgUrl: "assets/images/Screenshot-AdviceApp.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://rukkies-adviceapp.netlify.app",
-            tooltip: "View the web",
-          },
-
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/advice_app_vue3",
-            tooltip: "View on github",
-          },
-        ],
-      },
-      {
-        title: "Metadapp",
-        tags: ["react", "MUI", "Web3"],
-        desc: "An all in one Web3 dashboard",
-        imgUrl: "assets/images/Screenshot-Metadapp.png",
-
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://metadapp.com",
-            tooltip: "View the web",
-          },
-        ],
-      },
-
-      {
-        title: "MuqeeAI",
-        tags: ["react", "nextJS", "tailwind CSS"],
-        desc: "Content creation on Autopilot.",
-        imgUrl: "assets/images/Screenshot-Muqee.png",
-
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://muqee.ai",
-            tooltip: "View the web",
-          },
-        ],
-      },
-
-      {
         title: "lastprice",
         tags: ["react", "redux", "ant design"],
         desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
@@ -269,27 +295,51 @@ const app: IApp = {
         ],
       },
 
+      // {
+      //   title: "Art gallery",
+      //   tags: ["HTML", "CSS", "JS"],
+      //   desc: "Simple art gallery website template",
+      //   imgUrl: "assets/images/Screenshot-ArtGallery.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://rukkies-art-gallery.netlify.app",
+      //       tooltip: "View the web",
+      //     },
+
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/rukkiechovwe/Art-gallery",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
+    ],
+    projects: [
       {
-        title: "Art gallery",
-        tags: ["HTML", "CSS", "JS"],
-        desc: "Simple art gallery website template",
-        imgUrl: "assets/images/Screenshot-ArtGallery.png",
+        title: "Wano.finance",
+        tags: [
+          "nextjs",
+          "tailwind",
+          "supabase",
+          "postgres",
+          "metamask",
+          "solidity",
+          "layerzero",
+          "infura",
+          "truffle",
+        ],
+        desc: "Web3 omnichain payment infrastructure - Enhanced payment experience for 20M+ users in web3",
+        imgUrl: "assets/images/Screenshot-Wano.png",
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https://rukkies-art-gallery.netlify.app",
+            url: "https://wano.finance/",
             tooltip: "View the web",
-          },
-
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/Art-gallery",
-            tooltip: "View on github",
           },
         ],
       },
-    ],
-    projects: [
+
       {
         title: "Fem GPT",
         tags: ["react", "tailwind CSS", "AI"],
@@ -310,21 +360,6 @@ const app: IApp = {
       },
 
       {
-        title: "Metadapp",
-        tags: ["react", "MUI", "Web3"],
-        desc: "An all in one Web3 dashboard",
-        imgUrl: "assets/images/Screenshot-Metadapp.png",
-
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://metadapp.com",
-            tooltip: "View the web",
-          },
-        ],
-      },
-
-      {
         title: "MuqeeAI",
         tags: ["react", "nextJS", "tailwind CSS"],
         desc: "Content creation on Autopilot.",
@@ -334,6 +369,21 @@ const app: IApp = {
           {
             icon: <Globe size={24} />,
             url: "https://muqee.ai",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
+        title: "Metadapp",
+        tags: ["react", "MUI", "Web3"],
+        desc: "An all in one Web3 dashboard",
+        imgUrl: "assets/images/Screenshot-Metadapp.png",
+
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://metadapp.com",
             tooltip: "View the web",
           },
         ],
@@ -445,25 +495,25 @@ const app: IApp = {
         ],
       },
 
-      {
-        title: "Art gallery",
-        tags: ["HTML", "CSS", "JS"],
-        desc: "Simple art gallery website template",
-        imgUrl: "assets/images/Screenshot-ArtGallery.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://rukkies-art-gallery.netlify.app",
-            tooltip: "View the web",
-          },
+      // {
+      //   title: "Art gallery",
+      //   tags: ["HTML", "CSS", "JS"],
+      //   desc: "Simple art gallery website template",
+      //   imgUrl: "assets/images/Screenshot-ArtGallery.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://rukkies-art-gallery.netlify.app",
+      //       tooltip: "View the web",
+      //     },
 
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/Art-gallery",
-            tooltip: "View on github",
-          },
-        ],
-      },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/rukkiechovwe/Art-gallery",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
     ],
   },
 

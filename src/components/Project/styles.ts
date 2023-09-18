@@ -116,6 +116,7 @@ export const Icons = styled.div`
 export const TagRow = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 export const Tag = styled.div`
