@@ -8,6 +8,8 @@ export const lightTheme: ITheme = {
   textColor: "grey",
   highlightTextColor: "#00b968",
   titleColor: "#000",
+  paragraphTextColor: "hsla(0,0%,0%,0.8)",
+
   projectDescColor: "#484848",
   tooltipColor: "#fff",
   borderColor: "1px solid #eaeaea96",
@@ -26,7 +28,7 @@ export const darkTheme: ITheme = {
   highlightTextColor: "#00b968",
   headerTextColor: "#fff",
   textColor: "hsla(0,0%,100%,0.4)",
-  paragraphTextColor: "hsla(0,0%,100%,0.4)",
+  paragraphTextColor: "hsla(0,0%,100%,0.7)",
   titleColor: "#fff",
   projectDescColor: "#7d7d7d",
   tooltipColor: "#000",

@@ -29,13 +29,13 @@ const Hero: React.FC<HeroProps> = ({
           {
             opacity: 1,
             stagger: 0.2,
-            duration: 1,
+            duration: 0.1,
             ease: "power4.out",
             ...config,
           }
         );
       },
-      defaults: { duration: 2 },
+      defaults: { duration: 0.1 },
       extendTimeline: true,
     });
 
@@ -54,42 +54,24 @@ const Hero: React.FC<HeroProps> = ({
           {
             y: 0,
             opacity: 1,
-            stagger: 0.01,
-            duration: 1.5,
+            stagger: 0.1,
+            duration: 0.5,
             ease: "power4.out",
             ...config,
           }
         );
       },
-      defaults: { duration: 1 },
+      defaults: { duration: 0.5 },
       extendTimeline: true,
     });
 
-    gsap.registerEffect({
-      name: "slideUp",
-      effect: (target: string, config?: any) => {
-        return gsap.to(
-          target,
-
-          {
-            y: 0,
-            duration: 3,
-            stagger: 0.05,
-            ease: "power4.out",
-            ...config,
-          }
-        );
-      },
-      defaults: { duration: 2 },
-      extendTimeline: true,
-    });
 
     const textAnimation = gsap.timeline();
 
     textAnimation.fadeLeft(".greeting");
     textAnimation.dropAndBounce(".name");
-    textAnimation.fadeLeft(".desc");
-    textAnimation.slideUp(".scroll_btn");
+    // textAnimation.fadeLeft(".desc");
+    // textAnimation.slideUp(".scroll_btn");
   }, []);
 
   return (
@@ -104,7 +86,7 @@ const Hero: React.FC<HeroProps> = ({
         </ColoredText>
       </S.Greetings>
       <S.HeaderText>
-        {`${text} ${catchPhrase}`.split("").map((text, i) => {
+        {text.split("").map((text, i) => {
           return text === " " ? (
             <span className="name" key={i}>
               {" "}
@@ -116,13 +98,28 @@ const Hero: React.FC<HeroProps> = ({
           );
         })}
       </S.HeaderText>
-      <S.DescText>
-        {desc.split("").map((text, i) => (
-          <span className="desc" key={i}>
-            {text}
-          </span>
-        ))}
-      </S.DescText>
+      <S.HeaderText>
+        {catchPhrase.split("").map((text, i) => {
+          return text === " " ? (
+            <span className="name" key={i}>
+              {" "}
+            </span>
+          ) : (
+            <S.NameLetters className="name" key={i}>
+              {text}
+            </S.NameLetters>
+          );
+        })}
+      </S.HeaderText>
+      {/* <S.DescText>
+        <ColoredText>
+          {desc.split("").map((text, i) => (
+            <span className="desc" key={i}>
+              {text}
+            </span>
+          ))}
+        </ColoredText>
+      </S.DescText> */}
 
       <ScrollTo link="about" />
     </S.Container>

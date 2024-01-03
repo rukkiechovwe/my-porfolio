@@ -14,15 +14,15 @@ const app: IApp = {
   hero: {
     tag: "hero",
     name: "Ufuoma Oghenechovwe",
-    catchPhrase: "Rukkie",
-    text: "I'm",
-    greeting: "Hello there",
-    desc: "<> Front-end developer </>",
+    catchPhrase: "Frontend Engineer",
+    text: "Creative",
+    greeting: "Hey, I'm Rukkie",
+    desc: "<p>Frontend Engineer</p>",
   },
   about: {
     tag: "about",
     name: "Ufuoma",
-    bio: "As a frontend developer, I possess a creative mindset that allows me to design visually appealing websites, with great attention to detail. I have collaborated with talented people to deliver exceptional web products that are both aesthetically pleasing and technically demanding. <p> My foremost priority is delivering outstanding results that exceed the expectations of my clients and employers. I'm proficient and actively working with the tools and skillset listed below.<p/>",
+    bio: "I'm a frontend engineer with 3 years of experience collaborating with diverse and talented teams to deliver cutting-edge web projects. I have proven ability to seamlessly blend design with technical excellence. I pay great attention to detail. <p>I'm proficient and actively working with the tools and skillset listed below.<p/>",
 
     skills: [
       {
@@ -87,41 +87,42 @@ const app: IApp = {
       {
         companyName: "3RM",
         companyLink: "",
-        duration: "November 2022 - April 2023",
+        duration: "November 2022 - May 2023",
         jobTitle: "Frontend Engineer",
         workDone: [
-          "Collaborated closely with the design, product, and backend teams at 3RM to successfully build a web3 relationship manager, facilitating efficient communication and organisation within the company.",
-          " Developed and maintained seamless integration of Telegram, into the company's website.Implemented key features including Telegram syncing, assigning follow - ups and tracking conversations.",
-          "Ensured exceptional user experience by implementing responsive design techniques, ensuring cross-browser compatibility, and optimising mobile responsiveness.",
-          "Collaborated closely with the design team at 3RM to transform mockups and wireframes into polished, functional web pages, ensuring a seamless and visually appealing user experience.",
-          "Optimised website performance by implementing advanced code optimization techniques and leveraging caching mechanisms, resulting in faster load times and improved overall user experience.",
-          "Proactively stayed up-to-date with the latest frontend development trends and technologies, actively seeking opportunities to enhance skills and contribute innovative ideas to the team's success at 3RM.",
+          "Collaborated closely with the backend, design, and product teams at 3RM in the  successful development of a cutting-edge web3 relationship manager, fostering efficient communication and organisational excellence within the company.",
+          "Developed and maintained flawless integration of Telegram, into the company's website, introducing key features such as Telegram syncing, follow-up assignment, and conversation tracking.",
+          "Ensured exceptional user experience by implementing responsive design techniques, ensuring cross - browser compatibility, and optimising mobile responsiveness.",
+          "Teamed up closely with the design team at 3RM to transform mockups and wireframes into well polished, functional web pages, ensuring a seamless and visually appealing user experience.",
+          "Optimised website performance through the application of advanced code optimization techniques and leveraging caching mechanisms, resulting in faster load times and improved overall user experience.",
+          "Demonstrated remarkable efficiency and time management skills in a fully remote role, showcasing the ability to work autonomously and deliver high - quality results without the need for micro - management.",
         ],
       },
       {
         companyName: "Metadapp",
         companyLink: "",
-        duration: "September 2022 - March 2023",
+        duration: "September 2021 - March 2023",
         jobTitle: "Frontend Developer",
         workDone: [
-          "Built and implemented several successful features such as Risk management, Portfolio management,Referral system and Revoke approval on Metadapp web3 application.",
-          "Worked together with design, product, and backend teams to oversee and maintain the Metadapp web3 dashboard.",
-          "Integrated various APIs and third-party services to enhance website functionality and enable efficient data retrieval.",
-          "Conducted thorough testing and debugging to identify and fix any issues or bugs in the frontend codebase.",
-          "Worked closely with customer success team to triage, troubleshoot and resolve customer facing issues by providing technical support, guidance, and implementing solutions in a timely manner.",
+          "Led the development and successful implementation of critical features such as Risk Management, Portfolio Management, Referral System, and Revoke Approval within the Metadapp web3 application.",
+          "Collaborated closely with the design, product, and backend teams to oversee and maintain the Metadapp web3 dashboard ensuring a seamless user experience and effective presentation of information.",
+          "Integrated GraphQL APIs and various third - party services and web3 APIs elevating website functionality and enabling efficient data retrieval.Thereby enhancing overall user engagement. ",
+          "Conducted rigorous testing and debugging protocols, swiftly identifying and resolving frontend codebase issues to ensure a resilient and error - free application.",
+          "Worked closely with the customer success team, triaging, troubleshooting, and promptly resolving customer- facing issues.Provided technical support, guidance, and implemented effective solutions to maintain a high standard of customer satisfaction.",
+          "Enhanced developer experience and code readability through eliminating redundancy, simplifying, and introducing reusable components for improved clarity and efficiency.",
         ],
       },
-      {
-        companyName: "GreenTech",
-        companyLink: "",
-        duration: "September 2021 - April 2022",
-        jobTitle: "Frontend Developer",
-        workDone: [
-          "Played a pivotal role in designing and implementing various features and functionalities, including API integrations, as part of the frontend development team.",
-          "Collaborated closely with the design and product teams to create a professional and user-friendly consultancy website, ensuring a seamless user experience and effective presentation of information.",
-          "Managed and maintained the Naija Kobo Market website, ensuring its smooth operation, regular updates, and adherence to design standards and guidelines.",
-        ],
-      },
+      // {
+      //   companyName: "GreenTech",
+      //   companyLink: "",
+      //   duration: "September 2021 - April 2022",
+      //   jobTitle: "Frontend Developer",
+      //   workDone: [
+      //     "Played a pivotal role in designing and implementing various features and functionalities, including API integrations, as part of the frontend development team.",
+      //     "Collaborated closely with the design and product teams to create a professional and user-friendly consultancy website, ensuring a seamless user experience and effective presentation of information.",
+      //     "Managed and maintained the Naija Kobo Market website, ensuring its smooth operation, regular updates, and adherence to design standards and guidelines.",
+      //   ],
+      // },
       // {
       //   companyName: "Kivifood",
       //   companyLink: "",
@@ -138,9 +139,9 @@ const app: IApp = {
         duration: "April 2021 - July 2021",
         jobTitle: "Frontend Developer Intern",
         workDone: [
-          "Designed and developed the Xigma solar service website.",
-          "Teamed up with the product team to design and iterate on the mobile interface, ensuring a user-friendly and visually appealing experience for mobile users accessing the Xigma solar service.",
-          "Demonstrated leadership skills by spearheading a training program for a group of 10 interns, delivering a comprehensive introduction to frontend development.",
+          "Designed and developed the Xigma solar service website, contributing to its design and functionality to enhance user engagement and promote solar services effectively.",
+          "Teamed up with the product team to design and refine the mobile interface.Ensured a seamless, user- friendly and visually appealing experience for mobile users accessing the Xigma solar service.",
+          "Exhibited leadership qualities by initiating and leading a training program for a cohort of 10 interns, delivering a comprehensive introduction to frontend development.This endeavour contributed to fostering a collaborative learning environment and skill development within the team.",
         ],
       },
     ],
@@ -154,7 +155,6 @@ const app: IApp = {
         tags: [
           "nextjs",
           "tailwind",
-          "supabase",
           "postgres",
           "metamask",
           "solidity",
@@ -163,7 +163,7 @@ const app: IApp = {
           "truffle",
         ],
         desc: "Web3 omnichain payment infrastructure - Enhanced payment experience for 20M+ users in web3",
-        imgUrl: "assets/images/Screenshot-Wano.png",
+        imgUrl: "assets/images/www.wano.finance_1.png",
         links: [
           {
             icon: <Globe size={24} />,
@@ -191,7 +191,7 @@ const app: IApp = {
       {
         title: "kivifood",
         tags: ["react", "styled-component"],
-        desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
+        desc: "Get the food you want from the comfort of your home.",
         imgUrl: "assets/images/Screenshot-Kivi.png",
         links: [
           {
@@ -278,7 +278,7 @@ const app: IApp = {
       {
         title: "lastprice",
         tags: ["react", "redux", "ant design"],
-        desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
+        desc: "Buy and sell products at discounted or slashed prices.",
         imgUrl: "assets/images/Screenshot-Lastprice.png",
         links: [
           {
@@ -318,18 +318,8 @@ const app: IApp = {
     projects: [
       {
         title: "Wano.finance",
-        tags: [
-          "nextjs",
-          "tailwind",
-          "supabase",
-          "postgres",
-          "metamask",
-          "solidity",
-          "layerzero",
-          "infura",
-          "truffle",
-        ],
-        desc: "Web3 omnichain payment infrastructure - Enhanced payment experience for 20M+ users in web3",
+        tags: ["nextjs", "tailwind", "metamask"],
+        desc: "Web3 omnichain payment infrastructure",
         imgUrl: "assets/images/Screenshot-Wano.png",
         links: [
           {
@@ -411,7 +401,7 @@ const app: IApp = {
       {
         title: "kivifood",
         tags: ["react", "styled-component"],
-        desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
+        desc: "Get the food you want from the comfort of your home.",
         imgUrl: "assets/images/Screenshot-Kivi.png",
         links: [
           {
@@ -458,7 +448,7 @@ const app: IApp = {
       {
         title: "lastprice",
         tags: ["react", "redux", "ant design"],
-        desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
+        desc: "Buy and sell products at discounted or slashed prices.",
         imgUrl: "assets/images/Screenshot-Lastprice.png",
         links: [
           {

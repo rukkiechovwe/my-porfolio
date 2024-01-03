@@ -22,9 +22,12 @@ export const ParaText = styled.p`
   font-size: 15px;
   text-align: left;
   line-height: 26px;
+  p {
+    font-size: 15px;
+  }
 
   @media only screen and (min-width: 768px) {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 32px;
   }
 `;
@@ -49,7 +52,7 @@ export const SkillList = styled.div`
   width: 100%;
   display: grid;
   grid-template: 1fr / 100%;
-  gap: 20px;
+  gap: 10px;
 `;
 
 export const SkillItem = styled.div`
@@ -69,7 +72,7 @@ export const SkillTitleText = styled.p`
 `;
 
 export const DataNameText = styled.span`
-  color: ${(props) => (props.theme as ITheme).paragraphTextColor};
+  color: ${(props) => (props.theme as ITheme).textColor};
   padding-right: 10px;
 `;
 

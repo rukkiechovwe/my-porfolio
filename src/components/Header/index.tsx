@@ -16,7 +16,12 @@ const Header: FC = () => {
   return (
     <S.Container>
       <S.Bar>
-        <Image src="/assets/images/logo1.png" alt="" width="30" height="30" />
+        <S.LogoImage
+          src="/assets/images/logo.jpg"
+          alt=""
+          width="60"
+          height="60"
+        />
         <S.ThemeWrapper>
           <S.Theme onClick={(_e) => toggleTheme?.()}>
             {darkMode ? <SunDim size={24} /> : <Moon size={24} />}
@@ -41,11 +46,11 @@ const Header: FC = () => {
                 //   setIsOpen(false);
                 // }}
               >
-                <Image
-                  src="/assets/images/logo1.png"
+                <S.LogoImage
+                  src="/assets/images/logo.jpg"
                   alt=""
-                  width="30"
-                  height="30"
+                  width="60"
+                  height="60"
                 />
               </S.StyledLink>
             </S.ListItemImg>

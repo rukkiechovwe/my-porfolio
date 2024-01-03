@@ -20,7 +20,7 @@ const Project: React.FC<ProjectProps> = ({
       <S.MobileProjects>
         {projects.map((item, i) => (
           <S.Project key={i} url={item.imgUrl}>
-            <div>
+            <div className="project-desc">
               <S.TitleText>
                 {item.title}
                 <ArrowUpRight size={22} />
@@ -50,7 +50,7 @@ const Project: React.FC<ProjectProps> = ({
       <S.DeskTopProjects>
         {deskTopProjects.map((item, i) => (
           <S.Project key={i} url={item.imgUrl}>
-            <div>
+            <div className="project-desc">
               <S.TitleText>
                 {item.title}
                 <ArrowUpRight size={22} />

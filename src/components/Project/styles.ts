@@ -41,7 +41,7 @@ export interface IProject {
 
 export const Project = styled.div<IProject>`
   margin: 0 0 1.5rem;
-  height: 250px;
+  height: 310px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -68,9 +68,9 @@ export const Project = styled.div<IProject>`
     background: #00000052;
     background: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.8596171745065213) 0%,
-      rgba(0, 0, 0, 0.09491129215358018) 92%,
-      rgba(0, 0, 0, 0.09491129215358018) 100%
+      rgba(0, 0, 0, 0.86) 0%,
+      rgba(0, 0, 0, 0.094) 92%,
+      rgba(0, 0, 0, 0.094) 100%
     );
   }
 
@@ -78,30 +78,38 @@ export const Project = styled.div<IProject>`
     background: #00000052;
     background: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.8596171745065213) 0%,
-      rgba(0, 0, 0, 0.09491129215358018) 92%,
-      rgba(0, 0, 0, 0.09491129215358018) 100%
+      rgba(0, 0, 0, 0.86) 0%,
+      rgba(0, 0, 0, 0.094) 92%,
+      rgba(0, 0, 0, 0.094) 100%
     );
   }
 
-  div {
+  .project-desc {
     z-index: 2;
     transition: 200ms;
     transform: translateY(0);
 
     @media (min-width: 768px) {
-      transform: translateY(100px);
+      transform: translateY(105px);
     }
   }
 
-  &:hover div {
+  :first-child .project-desc {
+    @media (min-width: 768px) {
+      transform: translateY(143px);
+    }
+  }
+
+  &:hover .project-desc {
     transform: translateY(0);
   }
 
   @media (min-width: 570px) {
     padding: 2.5rem 1.6rem;
   }
+
   @media (min-width: 670px) {
+    height: 250px;
     &:nth-child(3n + 1) {
       height: 360px;
     }

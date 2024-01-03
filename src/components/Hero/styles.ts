@@ -20,32 +20,31 @@ export const Container = styled.div`
 `;
 
 export const HeaderText = styled.h1`
-  font-size: 50px;
+  font-size: 30px;
   line-height: 56px;
   text-align: center;
   font-weight: 500;
   color: ${(props) => (props.theme as ITheme).headerTextColor};
   z-index: 9;
   margin: 0.5rem 0;
-  @media only screen and (min-width: 400px) {
-    font-size: 70px;
+  @media only screen and (min-width: 431px) {
+    font-size: 48px;
     line-height: 76px;
   }
 
   @media only screen and (min-width: 768px) {
-    font-size: 84px;
+    font-size: 62px;
     line-height: 90px;
     max-width: 1000px;
   }
 
   @media only screen and (min-width: 991px) {
-    font-size: 98px;
+    font-size: 76px;
     line-height: 104px;
   }
 `;
 
 export const Greetings = styled.h4`
-  text-transform: capitalize;
   font-size: 18px;
   margin: 0;
   font-weight: 100;
@@ -57,7 +56,7 @@ export const Greetings = styled.h4`
 `;
 
 export const DescText = styled.h4`
-  text-transform: capitalize;
+  font-family: "ShareTechMono";
   font-size: 14px;
   font-weight: 100;
   letter-spacing: 1px;

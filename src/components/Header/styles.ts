@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Link from "next/link";
 
 import { SideLine } from "../../styles/commonstyles";
+import Image from "next/image";
 
 export const Container = styled.nav`
   padding: 20px;
@@ -22,6 +23,7 @@ export const Container = styled.nav`
 export const Bar = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 
   div:first-child {
@@ -124,6 +126,10 @@ export const LinkGroup = styled.ul<ILinkGroup>`
   }
 `;
 
+export const LogoImage = styled(Image)`
+  border-radius: 50%;
+`;
+
 export interface IListItem {
   active?: boolean;
 }
@@ -136,7 +142,6 @@ export const ListItem = styled.li<IListItem>`
 export const ListItemImg = styled(ListItem)`
   margin: 0 auto;
   cursor: pointer;
-  background: ${(props) => props.theme.bgImageColor};
   padding: 0;
 
   a{

@@ -22,7 +22,7 @@ const ScrollHeroButton = styled(SButton)`
   border-radius: 50%;
   opacity: 0;
   animation: ${bounce} 2s alternate infinite;
-  animation-delay: 5s;
+  animation-delay: 3s;
   background: ${(props) => (props.theme as ITheme).highlightTextColor};
   padding: 8px;
 

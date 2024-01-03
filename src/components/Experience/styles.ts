@@ -99,7 +99,7 @@ export const WorkDoneList = styled.ul`
 `;
 
 export const WorkDoneItem = styled.li`
-  color: ${(props) => (props.theme as ITheme).projectDescColor};
+  color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   font-size: 15px !important;
   line-height: 26px;
   margin: 0 0 20px;

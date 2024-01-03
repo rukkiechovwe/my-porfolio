@@ -24,7 +24,7 @@ export const SpanText = styled.span`
   font-weight: 200;
   padding: 0;
   text-align: left;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   @media only screen and (max-width: 570px) {
     font-size: 16px;

@@ -3,15 +3,15 @@ import { ITheme } from "../utils/interfaces";
 
 const AppStyles = createGlobalStyle`
    @font-face {
-      font-family: 'Eina';
+      font-family: 'AlbertSans';
       font-weight:400;
-      src: url("/assets/fonts/Eina-Regular.ttf");
+      src: url("/assets/fonts/AlbertSans-Regular.ttf");
    }
 
    @font-face {
-      font-family: 'AtypText';
-      font-weight:500;
-      src: url("/assets/fonts/AtypText-Semibold.ttf");
+      font-family: 'Spinnaker';
+      font-weight:900;
+      src: url("/assets/fonts/Spinnaker-Regular.ttf");
    }
 
    *:focus {
@@ -21,7 +21,7 @@ const AppStyles = createGlobalStyle`
    body,html {
       margin: 0;
       padding: 0;
-      font-family: 'Eina';
+      font-family: 'AlbertSans';
       font-weight:400;
       background-color: ${(props) => (props.theme as ITheme).bgColor};
    }
@@ -44,7 +44,7 @@ const AppStyles = createGlobalStyle`
 
    h1, h2, h3 {
       font-weight: 500;
-      font-family: 'AtypText';
+      font-family: 'Spinnaker';
    }
 
    .tooltip-container {
