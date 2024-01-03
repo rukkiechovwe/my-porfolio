@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 90vh;
+  height: 86vh;
   min-height: 400px;
   padding: 0 15px;
   position: relative;
@@ -21,7 +21,7 @@ export const Container = styled.div`
 
 export const HeaderText = styled.h1`
   font-size: 30px;
-  line-height: 56px;
+  line-height: 36px;
   text-align: center;
   font-weight: 500;
   color: ${(props) => (props.theme as ITheme).headerTextColor};
@@ -29,24 +29,24 @@ export const HeaderText = styled.h1`
   margin: 0.5rem 0;
   @media only screen and (min-width: 431px) {
     font-size: 48px;
-    line-height: 76px;
+    line-height: 56px;
   }
 
   @media only screen and (min-width: 768px) {
     font-size: 62px;
-    line-height: 90px;
+    line-height: 70px;
     max-width: 1000px;
   }
 
   @media only screen and (min-width: 991px) {
     font-size: 76px;
-    line-height: 104px;
+    line-height: 84px;
   }
 `;
 
 export const Greetings = styled.h4`
   font-size: 18px;
-  margin: 0;
+  margin: 0 0 2rem;
   font-weight: 100;
   letter-spacing: 1px;
   color: ${(props) => (props.theme as ITheme).headerTextColor};

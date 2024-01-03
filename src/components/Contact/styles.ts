@@ -3,7 +3,7 @@ import { ITheme } from "../../utils/interfaces";
 import { Container } from "../../styles/commonstyles";
 
 export const CContainer = styled(Container)`
-  min-height: 85vh;
+  min-height: 71vh;
   margin: 0 auto;
 
   @media only screen and (min-width: 570px) {
