@@ -4,6 +4,7 @@ import Tooltip from "../Tooltip";
 import * as S from "./styles";
 import { FloatText, ColoredText } from "../../styles/commonstyles";
 import ScrollTo from "../ScrollTo";
+import Link from "next/link";
 
 type ProjectProps = {
   project: IProject;
@@ -21,10 +22,12 @@ const Project: React.FC<ProjectProps> = ({
         {projects.map((item, i) => (
           <S.Project key={i} url={item.imgUrl}>
             <div className="project-desc">
-              <S.TitleText>
-                {item.title}
-                <ArrowUpRight size={22} />
-              </S.TitleText>
+              <Link href={item.links[0].url} target="_blank">
+                <S.TitleText>
+                  {item.title}
+                  <ArrowUpRight size={22} />
+                </S.TitleText>
+              </Link>
               <S.DescText>{item.desc}</S.DescText>
 
               <S.TagRow>
@@ -51,10 +54,12 @@ const Project: React.FC<ProjectProps> = ({
         {deskTopProjects.map((item, i) => (
           <S.Project key={i} url={item.imgUrl}>
             <div className="project-desc">
-              <S.TitleText>
-                {item.title}
-                <ArrowUpRight size={22} />
-              </S.TitleText>
+              <Link href={item.links[0].url} target="_blank">
+                <S.TitleText>
+                  {item.title}
+                  <ArrowUpRight size={22} />
+                </S.TitleText>
+              </Link>
               <S.DescText>{item.desc}</S.DescText>
 
               <S.TagRow>
