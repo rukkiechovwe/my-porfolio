@@ -174,29 +174,15 @@ const app: IApp = {
       },
 
       {
-        title: "MuqeeAI",
-        tags: ["react", "nextJS", "tailwind"],
-        desc: "Content creation on Autopilot.",
-        imgUrl: "assets/images/Screenshot-Muqee.png",
+        title: "Metadapp",
+        tags: ["react", "MUI", "Web3"],
+        desc: "An all in one Web3 dashboard",
+        imgUrl: "assets/images/Screenshot-Metadapp.png",
 
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https://muqee.ai",
-            tooltip: "View the web",
-          },
-        ],
-      },
-
-      {
-        title: "kivifood",
-        tags: ["react", "styled-component"],
-        desc: "Get the food you want from the comfort of your home.",
-        imgUrl: "assets/images/Screenshot-Kivi.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://kivifood.netlify.app/",
+            url: "https://metadapp.com",
             tooltip: "View the web",
           },
         ],
@@ -210,13 +196,66 @@ const app: IApp = {
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https://rukkies-adviceapp.netlify.app",
+            url: "https://rukkies-adviceapp.vercel.app",
             tooltip: "View the web",
           },
 
           {
             icon: <GithubLogo size={24} />,
             url: "https://github.com/rukkiechovwe/advice_app_vue3",
+            tooltip: "View on github",
+          },
+        ],
+      },
+
+      {
+        title: "Pocopay",
+        tags: ["HTML", "CSS", "JS"],
+        desc: "Simple business website template",
+        imgUrl: "assets/images/Screenshot-Pocopay.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://pocopay-website.vercel.app/",
+            tooltip: "View the web",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/pocopay-website",
+            tooltip: "View on github",
+          },
+        ],
+      },
+
+      {
+        title: "GACN",
+        tags: ["react", "tailwind"],
+        desc: "Gas Aggregator Company Nigeria LTD/GTE (GACN)",
+        imgUrl: "assets/images/Screenshot-GACN.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.gacn.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
+        title: "RK-Store",
+        tags: ["react", "styled-component"],
+        desc: "An elegant ecommerce application.",
+        imgUrl: "assets/images/Screenshot-RK-Store.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://rukkies-ecommerce.vercel.app/",
+            tooltip: "View the web",
+          },
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/ecommerce",
             tooltip: "View on github",
           },
         ],
@@ -241,60 +280,50 @@ const app: IApp = {
         ],
       },
 
-      {
-        title: "Metadapp",
-        tags: ["react", "MUI", "Web3"],
-        desc: "An all in one Web3 dashboard",
-        imgUrl: "assets/images/Screenshot-Metadapp.png",
-
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://metadapp.com",
-            tooltip: "View the web",
-          },
-        ],
-      },
-
-      {
-        title: "RK-Store",
-        tags: ["react", "styled-component"],
-        desc: "An elegant ecommerce application.",
-        imgUrl: "assets/images/Screenshot-RK-Store.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://rukkies-ecommerce.netlify.app/",
-            tooltip: "View the web",
-          },
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/ecommerce",
-            tooltip: "View on github",
-          },
-        ],
-      },
-
-      {
-        title: "lastprice",
-        tags: ["react", "redux", "ant design"],
-        desc: "Buy and sell products at discounted or slashed prices.",
-        imgUrl: "assets/images/Screenshot-Lastprice.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://amazing-torvalds-02adef.netlify.app",
-            tooltip: "View the web",
-          },
-
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/iamstanlee/last-price",
-            tooltip: "View on github",
-          },
-        ],
-      },
-
+      // {
+      //   title: "lastprice",
+      //   tags: ["react", "redux", "ant design"],
+      //   desc: "Buy and sell products at discounted or slashed prices.",
+      //   imgUrl: "assets/images/Screenshot-Lastprice.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://amazing-torvalds-02adef.netlify.app",
+      //       tooltip: "View the web",
+      //     },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/iamstanlee/last-price",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "MuqeeAI",
+      //   tags: ["react", "nextJS", "tailwind"],
+      //   desc: "Content creation on Autopilot.",
+      //   imgUrl: "assets/images/Screenshot-Muqee.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://muqee.ai",
+      //       tooltip: "View the web",
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "kivifood",
+      //   tags: ["react", "styled-component"],
+      //   desc: "Get the food you want from the comfort of your home.",
+      //   imgUrl: "assets/images/Screenshot-Kivi.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://kivifood.netlify.app/",
+      //       tooltip: "View the web",
+      //     },
+      //   ],
+      // },
       // {
       //   title: "Art gallery",
       //   tags: ["HTML", "CSS", "JS"],
@@ -303,10 +332,9 @@ const app: IApp = {
       //   links: [
       //     {
       //       icon: <Globe size={24} />,
-      //       url: "https://rukkies-art-gallery.netlify.app",
+      //       url: "https://rukkies-art-gallery.vercel.app",
       //       tooltip: "View the web",
       //     },
-
       //     {
       //       icon: <GithubLogo size={24} />,
       //       url: "https://github.com/rukkiechovwe/Art-gallery",
@@ -316,6 +344,20 @@ const app: IApp = {
       // },
     ],
     projects: [
+      {
+        title: "GACN",
+        tags: ["react", "tailwind"],
+        desc: "Gas Aggregator Company Nigeria LTD/GTE (GACN)",
+        imgUrl: "assets/images/Screenshot-GACN.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.gacn.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
       {
         title: "Wano.finance",
         tags: ["nextjs", "tailwind", "metamask"],
@@ -350,21 +392,6 @@ const app: IApp = {
       },
 
       {
-        title: "MuqeeAI",
-        tags: ["react", "nextJS", "tailwind CSS"],
-        desc: "Content creation on Autopilot.",
-        imgUrl: "assets/images/Screenshot-Muqee.png",
-
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://muqee.ai",
-            tooltip: "View the web",
-          },
-        ],
-      },
-
-      {
         title: "Metadapp",
         tags: ["react", "MUI", "Web3"],
         desc: "An all in one Web3 dashboard",
@@ -387,79 +414,12 @@ const app: IApp = {
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https://rukkies-ecommerce.netlify.app/",
+            url: "https://rukkies-ecommerce.vercel.app/",
             tooltip: "View the web",
           },
           {
             icon: <GithubLogo size={24} />,
             url: "https://github.com/rukkiechovwe/ecommerce",
-            tooltip: "View on github",
-          },
-        ],
-      },
-
-      {
-        title: "kivifood",
-        tags: ["react", "styled-component"],
-        desc: "Get the food you want from the comfort of your home.",
-        imgUrl: "assets/images/Screenshot-Kivi.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://kivifood.netlify.app/",
-            tooltip: "View the web",
-          },
-        ],
-      },
-      // {
-      //   title: "TodoApp",
-      //   tags: ["react"],
-      //   desc: "Todo list application.",
-      //   imgUrl: "assets/images/Screenshot-TodoApp.png",
-      //   links: [
-      //     {
-      //       icon: <Globe size={24} />,
-      //       url: "https://rukkiechovwe.github.io/myapp",
-      //       tooltip: "View the web",
-      //     },
-
-      //     {
-      //       icon: <GithubLogo size={24} />,
-      //       url: "https://github.com/rukkiechovwe/myapp",
-      //       tooltip: "View on github",
-      //     },
-      //   ],
-      // },
-
-      // {
-      //   title: "Icompresser",
-      //   tags: ["HTML", "CSS", "JS"],
-      //   desc: "Icompresser website",
-      //   imgUrl: "assets/images/Screenshot-ImgCompresser.png",
-      //   links: [
-      //     {
-      //       icon: <Globe size={24} />,
-      //       url: "https://www.icompresser.com/",
-      //       tooltip: "View the web",
-      //     },
-      //   ],
-      // },
-
-      {
-        title: "lastprice",
-        tags: ["react", "redux", "ant design"],
-        desc: "Buy and sell products at discounted or slashed prices.",
-        imgUrl: "assets/images/Screenshot-Lastprice.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://amazing-torvalds-02adef.netlify.app",
-            tooltip: "View the web",
-          },
-
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/iamstanlee/last-price",
             tooltip: "View on github",
           },
         ],
@@ -473,7 +433,7 @@ const app: IApp = {
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https://rukkies-adviceapp.netlify.app",
+            url: "https://rukkies-adviceapp.vercel.app",
             tooltip: "View the web",
           },
 
@@ -485,6 +445,88 @@ const app: IApp = {
         ],
       },
 
+      {
+        title: "Pocopay",
+        tags: ["HTML", "CSS", "JS"],
+        desc: "Simple business website template",
+        imgUrl: "assets/images/Screenshot-Pocopay.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://pocopay-website.vercel.app/",
+            tooltip: "View the web",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/pocopay-website",
+            tooltip: "View on github",
+          },
+        ],
+      },
+
+      // {
+      //   title: "MuqeeAI",
+      //   tags: ["react", "nextJS", "tailwind CSS"],
+      //   desc: "Content creation on Autopilot.",
+      //   imgUrl: "assets/images/Screenshot-Muqee.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://muqee.ai",
+      //       tooltip: "View the web",
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "kivifood",
+      //   tags: ["react", "styled-component"],
+      //   desc: "Get the food you want from the comfort of your home.",
+      //   imgUrl: "assets/images/Screenshot-Kivi.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://kivifood.netlify.app/",
+      //       tooltip: "View the web",
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "TodoApp",
+      //   tags: ["react"],
+      //   desc: "Todo list application.",
+      //   imgUrl: "assets/images/Screenshot-TodoApp.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://rukkiechovwe.github.io/myapp",
+      //       tooltip: "View the web",
+      //     },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/rukkiechovwe/myapp",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "lastprice",
+      //   tags: ["react", "redux", "ant design"],
+      //   desc: "Buy and sell products at discounted or slashed prices.",
+      //   imgUrl: "assets/images/Screenshot-Lastprice.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://amazing-torvalds-02adef.netlify.app",
+      //       tooltip: "View the web",
+      //     },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/iamstanlee/last-price",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
       // {
       //   title: "Art gallery",
       //   tags: ["HTML", "CSS", "JS"],
@@ -493,10 +535,9 @@ const app: IApp = {
       //   links: [
       //     {
       //       icon: <Globe size={24} />,
-      //       url: "https://rukkies-art-gallery.netlify.app",
+      //       url: "https://rukkies-art-gallery.vercel.app",
       //       tooltip: "View the web",
       //     },
-
       //     {
       //       icon: <GithubLogo size={24} />,
       //       url: "https://github.com/rukkiechovwe/Art-gallery",
