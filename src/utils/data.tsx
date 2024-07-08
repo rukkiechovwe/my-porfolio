@@ -85,17 +85,29 @@ const app: IApp = {
     tag: "experience",
     experiences: [
       {
+        companyName: "Muzzlab Technologies",
+        companyLink: "https://www.muzzlabtech.com/",
+        duration: "July 2023 - present",
+        jobTitle: "Frontend Engineer",
+        workDone: [
+          "⁠Played a key role in the successful development of a web application to automate manual processes enabling users to fill forms, make payments, and provide feedback. This greatly optimised operational efficiency and ensured high availability and reliability of services for users and administrators.",
+          "Implemented features such as authentication, team management, and multi-stage due diligence processes. This included complex workflows for due diligence stages, such as request forms, online meetings, payment processing, NDA forms, and extensive questionnaires with file uploads.",
+          "⁠Utilised Redux Toolkit & React Query for state management, optimising data flow and maintaining application scalability.",
+          "Partnered with stakeholders to gather requirements, iterate on designs, and deliver solutions that effectively meet business objectives and user needs",
+          "Contributed to enhancing the overall application architecture, code quality, and deployment processes, fostering a culture of continuous improvement within the development team.",
+        ],
+      },
+      {
         companyName: "3RM",
         companyLink: "",
         duration: "November 2022 - May 2023",
         jobTitle: "Frontend Engineer",
         workDone: [
-          "Collaborated closely with the backend, design, and product teams at 3RM in the  successful development of a cutting-edge web3 relationship manager, fostering efficient communication and organisational excellence within the company.",
-          "Developed and maintained flawless integration of Telegram, into the company's website, introducing key features such as Telegram syncing, follow-up assignment, and conversation tracking.",
-          "Ensured exceptional user experience by implementing responsive design techniques, ensuring cross - browser compatibility, and optimising mobile responsiveness.",
-          "Teamed up closely with the design team at 3RM to transform mockups and wireframes into well polished, functional web pages, ensuring a seamless and visually appealing user experience.",
-          "Optimised website performance through the application of advanced code optimization techniques and leveraging caching mechanisms, resulting in faster load times and improved overall user experience.",
-          "Demonstrated remarkable efficiency and time management skills in a fully remote role, showcasing the ability to work autonomously and deliver high - quality results without the need for micro - management.",
+          "Worked closely with team members at 3RM to implement a scalable architecture and develop a Telegram Relationship Manager, enhancing web3 organisations' ability to manage interactions on the Telegram platform more effectively.",
+          "Developed and maintained flawless integration of Telegram into the company's website, introducing essential features such as Telegram syncing, follow-up assignment, and conversation tracking.",
+          "Transformed mockups and wireframes into well polished, functional and responsive web pages, ensuring cross-browser compatibility and delivering a smooth, visually appealing user experience.",
+          "Enhanced website performance by implementing advanced code optimization techniques and utilising caching mechanisms, resulting in faster load times and significantly improved overall user experience.",
+          "Demonstrated remarkable efficiency and time management skills in a fully remote role, showcasing the ability to work independently and deliver high-quality results without requiring close supervision.",
         ],
       },
       {
@@ -104,44 +116,22 @@ const app: IApp = {
         duration: "September 2021 - March 2023",
         jobTitle: "Frontend Developer",
         workDone: [
-          "Led the development and successful implementation of critical features such as Risk Management, Portfolio Management, Referral System, and Revoke Approval within the Metadapp web3 application.",
-          "Collaborated closely with the design, product, and backend teams to oversee and maintain the Metadapp web3 dashboard ensuring a seamless user experience and effective presentation of information.",
-          "Integrated GraphQL APIs and various third - party services and web3 APIs elevating website functionality and enabling efficient data retrieval.Thereby enhancing overall user engagement. ",
-          "Conducted rigorous testing and debugging protocols, swiftly identifying and resolving frontend codebase issues to ensure a resilient and error - free application.",
-          "Worked closely with the customer success team, triaging, troubleshooting, and promptly resolving customer- facing issues.Provided technical support, guidance, and implemented effective solutions to maintain a high standard of customer satisfaction.",
-          "Enhanced developer experience and code readability through eliminating redundancy, simplifying, and introducing reusable components for improved clarity and efficiency.",
+          "Spearheaded the implementation of features such as Risk Management, Portfolio Management, Referral System, and Revoke Approval within the Metadapp web3 application.",
+          "Optimised the entire codebase by meticulously improving and refactoring legacy code to adhere to null-safety and modern standards, resulting in better performance and an improved development experience.",
+          "Collaborated effectively with team members to maintain the Metadapp Web3 dashboard, ensuring a seamless user experience and efficient presentation of information.",
+          "Integrated GraphQL APIs, various third-party services, and Web3 APIs to elevate website functionality and enable efficient data retrieval, thereby enhancing overall user engagement.",
+          "Conducted thorough testing and debugging protocols, quickly identifying and resolving frontend codebase issues to ensure a robust and error-free application.",
         ],
       },
-      // {
-      //   companyName: "GreenTech",
-      //   companyLink: "",
-      //   duration: "September 2021 - April 2022",
-      //   jobTitle: "Frontend Developer",
-      //   workDone: [
-      //     "Played a pivotal role in designing and implementing various features and functionalities, including API integrations, as part of the frontend development team.",
-      //     "Collaborated closely with the design and product teams to create a professional and user-friendly consultancy website, ensuring a seamless user experience and effective presentation of information.",
-      //     "Managed and maintained the Naija Kobo Market website, ensuring its smooth operation, regular updates, and adherence to design standards and guidelines.",
-      //   ],
-      // },
-      // {
-      //   companyName: "Kivifood",
-      //   companyLink: "",
-      //   duration: "May 2021 - February 2022",
-      //   jobTitle: "Frontend Developer/UI Designer",
-      //   workDone: [
-      //     "Devised and implemented the Kivifood marketing website and conducted several experiments to drive growth and engagement.",
-      //     "Worked together with the mobile team to design the Kivifood mobile app interface.",
-      //   ],
-      // },
       {
         companyName: "Xigma",
         companyLink: "",
-        duration: "April 2021 - July 2021",
+        duration: "April 2021 - August 2021",
         jobTitle: "Frontend Developer Intern",
         workDone: [
-          "Designed and developed the Xigma solar service website, contributing to its design and functionality to enhance user engagement and promote solar services effectively.",
-          "Teamed up with the product team to design and refine the mobile interface.Ensured a seamless, user- friendly and visually appealing experience for mobile users accessing the Xigma solar service.",
-          "Exhibited leadership qualities by initiating and leading a training program for a cohort of 10 interns, delivering a comprehensive introduction to frontend development.This endeavour contributed to fostering a collaborative learning environment and skill development within the team.",
+          "Led the design and implementation of the solar service website, enabling users to purchase solar services and equipment from home while providing solar tips to enhance engagement and effectively promote solar services.",
+          "Designed the mobile interface to ensure a seamless, user-friendly and visually appealing experience for users accessing the solar service on their mobile devices.",
+          "Initiated and led a training program for a cohort of 10 interns, delivering a comprehensive introduction to frontend development that fostered a collaborative learning environment and boosted team skill development.",
         ],
       },
     ],
@@ -150,6 +140,20 @@ const app: IApp = {
   project: {
     tag: "project",
     deskTopProjects: [
+      {
+        title: "Feastpass",
+        tags: ["nextjs", "tailwind"],
+        desc: "Your Cities Food Guide",
+        imgUrl: "assets/images/Screenshot-Feastpass.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.feastpasshq.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
       {
         title: "Wano.finance",
         tags: [
@@ -163,26 +167,11 @@ const app: IApp = {
           "truffle",
         ],
         desc: "Web3 omnichain payment infrastructure - Enhanced payment experience for 20M+ users in web3",
-        imgUrl: "assets/images/www.wano.finance_1.png",
+        imgUrl: "assets/images/Screenshot-Wano1.png",
         links: [
           {
             icon: <Globe size={24} />,
             url: "https://wano.finance/",
-            tooltip: "View the web",
-          },
-        ],
-      },
-
-      {
-        title: "Metadapp",
-        tags: ["react", "MUI", "Web3"],
-        desc: "An all in one Web3 dashboard",
-        imgUrl: "assets/images/Screenshot-Metadapp.png",
-
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://metadapp.com",
             tooltip: "View the web",
           },
         ],
@@ -237,6 +226,21 @@ const app: IApp = {
           {
             icon: <Globe size={24} />,
             url: "https://www.gacn.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
+        title: "Metadapp",
+        tags: ["react", "MUI", "Web3"],
+        desc: "An all in one Web3 dashboard",
+        imgUrl: "assets/images/Screenshot-Metadapp.png",
+
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://metadapp.com",
             tooltip: "View the web",
           },
         ],
@@ -345,6 +349,20 @@ const app: IApp = {
     ],
     projects: [
       {
+        title: "Feastpass",
+        tags: ["nextjs", "tailwind"],
+        desc: "Your Cities Food Guide",
+        imgUrl: "assets/images/Screenshot-Feastpass.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.feastpasshq.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
         title: "GACN",
         tags: ["react", "tailwind"],
         desc: "Gas Aggregator Company Nigeria LTD/GTE (GACN)",
@@ -373,6 +391,21 @@ const app: IApp = {
       },
 
       {
+        title: "Metadapp",
+        tags: ["react", "MUI", "Web3"],
+        desc: "An all in one Web3 dashboard",
+        imgUrl: "assets/images/Screenshot-Metadapp.png",
+
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://metadapp.com",
+            tooltip: "View the web",
+          },
+        ],
+      },
+
+      {
         title: "Fem GPT",
         tags: ["react", "tailwind CSS", "AI"],
         desc: "Female health advisor",
@@ -387,21 +420,6 @@ const app: IApp = {
             icon: <GithubLogo size={24} />,
             url: "https://github.com/rukkiechovwe/fem-gpt",
             tooltip: "View on github",
-          },
-        ],
-      },
-
-      {
-        title: "Metadapp",
-        tags: ["react", "MUI", "Web3"],
-        desc: "An all in one Web3 dashboard",
-        imgUrl: "assets/images/Screenshot-Metadapp.png",
-
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://metadapp.com",
-            tooltip: "View the web",
           },
         ],
       },
