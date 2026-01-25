@@ -34,11 +34,11 @@ const app: IApp = {
           },
           {
             name: "frontend",
-            data: ["reactJS", "vueJS", "nextJS", "nuxtJS"],
+            data: ["reactJS", "nextJS"],
           },
           {
             name: "state-management",
-            data: ["vuex", "redux", "react-query"],
+            data: ["redux", "react-query"],
           },
           {
             name: "styling",
@@ -49,7 +49,7 @@ const app: IApp = {
           //   data: ["firebase", "graphql"],
           // },
           // { name: "animation", data: ["GSAP"] },
-          { name: "others", data: ["git", "GSAP", "firebase"] },
+          { name: "others", data: ["git", "GSAP"] },
         ],
       },
     ],
@@ -123,17 +123,17 @@ const app: IApp = {
           "Conducted thorough testing and debugging protocols, quickly identifying and resolving frontend codebase issues to ensure a robust and error-free application.",
         ],
       },
-      {
-        companyName: "Xigma",
-        companyLink: "",
-        duration: "April 2021 - August 2021",
-        jobTitle: "Frontend Developer Intern",
-        workDone: [
-          "Led the design and implementation of the solar service website, enabling users to purchase solar services and equipment from home while providing solar tips to enhance engagement and effectively promote solar services.",
-          "Designed the mobile interface to ensure a seamless, user-friendly and visually appealing experience for users accessing the solar service on their mobile devices.",
-          "Initiated and led a training program for a cohort of 10 interns, delivering a comprehensive introduction to frontend development that fostered a collaborative learning environment and boosted team skill development.",
-        ],
-      },
+      // {
+      //   companyName: "Xigma",
+      //   companyLink: "",
+      //   duration: "April 2021 - August 2021",
+      //   jobTitle: "Frontend Developer Intern",
+      //   workDone: [
+      //     "Led the design and implementation of the solar service website, enabling users to purchase solar services and equipment from home while providing solar tips to enhance engagement and effectively promote solar services.",
+      //     "Designed the mobile interface to ensure a seamless, user-friendly and visually appealing experience for users accessing the solar service on their mobile devices.",
+      //     "Initiated and led a training program for a cohort of 10 interns, delivering a comprehensive introduction to frontend development that fostered a collaborative learning environment and boosted team skill development.",
+      //   ],
+      // },
     ],
   },
 
@@ -154,28 +154,28 @@ const app: IApp = {
         ],
       },
 
-      {
-        title: "Wano.finance",
-        tags: [
-          "nextjs",
-          "tailwind",
-          "postgres",
-          "metamask",
-          "solidity",
-          "layerzero",
-          "infura",
-          "truffle",
-        ],
-        desc: "Web3 omnichain payment infrastructure - Enhanced payment experience for 20M+ users in web3",
-        imgUrl: "assets/images/Screenshot-Wano1.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://wano.finance/",
-            tooltip: "View the web",
-          },
-        ],
-      },
+      // {
+      //   title: "Wano.finance",
+      //   tags: [
+      //     "nextjs",
+      //     "tailwind",
+      //     "postgres",
+      //     "metamask",
+      //     "solidity",
+      //     "layerzero",
+      //     "infura",
+      //     "truffle",
+      //   ],
+      //   desc: "Web3 omnichain payment infrastructure - Enhanced payment experience for 20M+ users in web3",
+      //   imgUrl: "assets/images/Screenshot-Wano1.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://wano.finance/",
+      //       tooltip: "View the web",
+      //     },
+      //   ],
+      // },
 
       {
         title: "Advice App",
@@ -197,25 +197,25 @@ const app: IApp = {
         ],
       },
 
-      {
-        title: "Pocopay",
-        tags: ["HTML", "CSS", "JS"],
-        desc: "Simple business website template",
-        imgUrl: "assets/images/Screenshot-Pocopay.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://pocopay-website.vercel.app/",
-            tooltip: "View the web",
-          },
+      // {
+      //   title: "Pocopay",
+      //   tags: ["HTML", "CSS", "JS"],
+      //   desc: "Simple business website template",
+      //   imgUrl: "assets/images/Screenshot-Pocopay.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://pocopay-website.vercel.app/",
+      //       tooltip: "View the web",
+      //     },
 
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/pocopay-website",
-            tooltip: "View on github",
-          },
-        ],
-      },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/rukkiechovwe/pocopay-website",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
 
       {
         title: "GACN",
@@ -246,43 +246,43 @@ const app: IApp = {
         ],
       },
 
-      {
-        title: "RK-Store",
-        tags: ["react", "styled-component"],
-        desc: "An elegant ecommerce application.",
-        imgUrl: "assets/images/Screenshot-RK-Store.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://rukkies-ecommerce.vercel.app/",
-            tooltip: "View the web",
-          },
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/ecommerce",
-            tooltip: "View on github",
-          },
-        ],
-      },
+      // {
+      //   title: "RK-Store",
+      //   tags: ["react", "styled-component"],
+      //   desc: "An elegant ecommerce application.",
+      //   imgUrl: "assets/images/Screenshot-RK-Store.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://rukkies-ecommerce.vercel.app/",
+      //       tooltip: "View the web",
+      //     },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/rukkiechovwe/ecommerce",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
 
-      {
-        title: "Fem GPT",
-        tags: ["react", "tailwind", "AI"],
-        desc: "Female health advisor",
-        imgUrl: "assets/images/Screenshot-FemGPT.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://fem-gpt.vercel.app/",
-            tooltip: "View the web",
-          },
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/fem-gpt",
-            tooltip: "View on github",
-          },
-        ],
-      },
+      // {
+      //   title: "Fem GPT",
+      //   tags: ["react", "tailwind", "AI"],
+      //   desc: "Female health advisor",
+      //   imgUrl: "assets/images/Screenshot-FemGPT.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://fem-gpt.vercel.app/",
+      //       tooltip: "View the web",
+      //     },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/rukkiechovwe/fem-gpt",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
 
       // {
       //   title: "lastprice",
@@ -376,19 +376,19 @@ const app: IApp = {
         ],
       },
 
-      {
-        title: "Wano.finance",
-        tags: ["nextjs", "tailwind", "metamask"],
-        desc: "Web3 omnichain payment infrastructure",
-        imgUrl: "assets/images/Screenshot-Wano.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://wano.finance/",
-            tooltip: "View the web",
-          },
-        ],
-      },
+      // {
+      //   title: "Wano.finance",
+      //   tags: ["nextjs", "tailwind", "metamask"],
+      //   desc: "Web3 omnichain payment infrastructure",
+      //   imgUrl: "assets/images/Screenshot-Wano.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://wano.finance/",
+      //       tooltip: "View the web",
+      //     },
+      //   ],
+      // },
 
       {
         title: "Metadapp",
@@ -405,43 +405,43 @@ const app: IApp = {
         ],
       },
 
-      {
-        title: "Fem GPT",
-        tags: ["react", "tailwind CSS", "AI"],
-        desc: "Female health advisor",
-        imgUrl: "assets/images/Screenshot-FemGPT.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://fem-gpt.vercel.app/",
-            tooltip: "View the web",
-          },
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/fem-gpt",
-            tooltip: "View on github",
-          },
-        ],
-      },
+      // {
+      //   title: "Fem GPT",
+      //   tags: ["react", "tailwind CSS", "AI"],
+      //   desc: "Female health advisor",
+      //   imgUrl: "assets/images/Screenshot-FemGPT.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://fem-gpt.vercel.app/",
+      //       tooltip: "View the web",
+      //     },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/rukkiechovwe/fem-gpt",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
 
-      {
-        title: "RK-Store",
-        tags: ["react", "styled-component"],
-        desc: "An elegant ecommerce application.",
-        imgUrl: "assets/images/Screenshot-RK-Store.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://rukkies-ecommerce.vercel.app/",
-            tooltip: "View the web",
-          },
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/ecommerce",
-            tooltip: "View on github",
-          },
-        ],
-      },
+      // {
+      //   title: "RK-Store",
+      //   tags: ["react", "styled-component"],
+      //   desc: "An elegant ecommerce application.",
+      //   imgUrl: "assets/images/Screenshot-RK-Store.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://rukkies-ecommerce.vercel.app/",
+      //       tooltip: "View the web",
+      //     },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/rukkiechovwe/ecommerce",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
 
       {
         title: "Advice App",
@@ -463,25 +463,25 @@ const app: IApp = {
         ],
       },
 
-      {
-        title: "Pocopay",
-        tags: ["HTML", "CSS", "JS"],
-        desc: "Simple business website template",
-        imgUrl: "assets/images/Screenshot-Pocopay.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://pocopay-website.vercel.app/",
-            tooltip: "View the web",
-          },
+      // {
+      //   title: "Pocopay",
+      //   tags: ["HTML", "CSS", "JS"],
+      //   desc: "Simple business website template",
+      //   imgUrl: "assets/images/Screenshot-Pocopay.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://pocopay-website.vercel.app/",
+      //       tooltip: "View the web",
+      //     },
 
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/pocopay-website",
-            tooltip: "View on github",
-          },
-        ],
-      },
+      //     {
+      //       icon: <GithubLogo size={24} />,
+      //       url: "https://github.com/rukkiechovwe/pocopay-website",
+      //       tooltip: "View on github",
+      //     },
+      //   ],
+      // },
 
       // {
       //   title: "MuqeeAI",
