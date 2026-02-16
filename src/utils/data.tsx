@@ -141,14 +141,41 @@ const app: IApp = {
     tag: "project",
     deskTopProjects: [
       {
-        title: "Feastpass",
+        title: "Caveat Emptor",
         tags: ["nextjs", "tailwind"],
-        desc: "Your Cities Food Guide",
-        imgUrl: "assets/images/Screenshot-Feastpass.png",
+        desc: "Vernacular Design Archive",
+        imgUrl: "assets/images/Screenshot-Ceavetemptor.jpg",
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https://www.feastpasshq.com/",
+            url: "https://www.caveatemptorarchive.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+      {
+        title: "GACN",
+        tags: ["react", "tailwind"],
+        desc: "Gas Aggregator Company Nigeria LTD/GTE (GACN)",
+        imgUrl: "assets/images/Screenshot-GACN.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.gacn.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+      {
+        title: "Metadapp",
+        tags: ["react", "MUI", "Web3"],
+        desc: "An all in one Web3 dashboard",
+        imgUrl: "assets/images/Screenshot-Metadapp.png",
+
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://metadapp.com",
             tooltip: "View the web",
           },
         ],
@@ -176,23 +203,16 @@ const app: IApp = {
       //     },
       //   ],
       // },
-
       {
-        title: "Advice App",
-        tags: ["vue"],
-        desc: "Get life advices with this application.",
-        imgUrl: "assets/images/Screenshot-AdviceApp.png",
+        title: "Still Practice",
+        tags: ["nextjs", "tailwind"],
+        desc: "Production Company",
+        imgUrl: "assets/images/Screenshot-Stillpractice.jpg",
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https://rukkies-adviceapp.vercel.app",
+            url: "https://www.stillpractice.com/",
             tooltip: "View the web",
-          },
-
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/rukkiechovwe/advice_app_vue3",
-            tooltip: "View on github",
           },
         ],
       },
@@ -218,30 +238,35 @@ const app: IApp = {
       // },
 
       {
-        title: "GACN",
-        tags: ["react", "tailwind"],
-        desc: "Gas Aggregator Company Nigeria LTD/GTE (GACN)",
-        imgUrl: "assets/images/Screenshot-GACN.png",
+        title: "Feastpass",
+        tags: ["nextjs", "tailwind"],
+        desc: "Your Cities Food Guide",
+        imgUrl: "assets/images/Screenshot-Feastpass.png",
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https://www.gacn.com/",
+            url: "https://www.feastpasshq.com/",
             tooltip: "View the web",
           },
         ],
       },
 
       {
-        title: "Metadapp",
-        tags: ["react", "MUI", "Web3"],
-        desc: "An all in one Web3 dashboard",
-        imgUrl: "assets/images/Screenshot-Metadapp.png",
-
+        title: "Advice App",
+        tags: ["vue"],
+        desc: "Get life advices with this application.",
+        imgUrl: "assets/images/Screenshot-AdviceApp.png",
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https://metadapp.com",
+            url: "https://rukkies-adviceapp.vercel.app",
             tooltip: "View the web",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/rukkiechovwe/advice_app_vue3",
+            tooltip: "View on github",
           },
         ],
       },
@@ -348,6 +373,32 @@ const app: IApp = {
       // },
     ],
     projects: [
+      {
+        title: "Caveat Emptor",
+        tags: ["nextjs", "tailwind"],
+        desc: "Vernacular Design Archive",
+        imgUrl: "assets/images/Screenshot-Ceavetemptor.jpg",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.caveatemptorarchive.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
+      {
+        title: "Still Practice",
+        tags: ["nextjs", "tailwind"],
+        desc: "Production Company",
+        imgUrl: "assets/images/Screenshot-Stillpractice.jpg",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.stillpractice.com/",
+            tooltip: "View the web",
+          },
+        ],
+      },
       {
         title: "Feastpass",
         tags: ["nextjs", "tailwind"],

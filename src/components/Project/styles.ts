@@ -94,11 +94,11 @@ export const Project = styled.div<IProject>`
     }
   }
 
-  :first-child .project-desc {
-    @media (min-width: 768px) {
-      transform: translateY(143px);
-    }
-  }
+  // :first-child .project-desc {
+  //   @media (min-width: 768px) {
+  //     transform: translateY(143px);
+  //   }
+  // }
 
   &:hover .project-desc {
     transform: translateY(0);
