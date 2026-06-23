@@ -10,46 +10,47 @@ import { IApp } from "./interfaces";
 
 const app: IApp = {
   title: "Ufuoma Oghenechovwe",
-  desc: "Rukkie's Porfolio and Resume",
+  desc: "Rukkie's Portfolio and Resume",
   hero: {
     tag: "hero",
     name: "Ufuoma Oghenechovwe",
     catchPhrase: "Frontend Engineer",
-    text: "Creative",
     greeting: "Hey, I'm Rukkie",
-    desc: "<p>Frontend Engineer</p>",
+    desc: "Currently @ ExodusAvia Group",
   },
   about: {
     tag: "about",
     name: "Ufuoma",
-    bio: "I'm a frontend engineer with 3 years of experience collaborating with diverse and talented teams to deliver cutting-edge web projects. I have proven ability to seamlessly blend design with technical excellence. I pay great attention to detail. <p>I'm proficient and actively working with the tools and skillset listed below.<p/>",
+    bio: "I'm a frontend engineer with 4+ years of professional experience building scalable, high-performance, production-ready web applications across diverse industries using React, Next.js, TypeScript, and GSAP. I have a proven ability to seamlessly blend design with technical excellence, delivering polished, fully integrated products from concept to deployment. I pay great attention to detail. <p>I'm proficient and actively working with the tools and skillset listed below.<p/>",
 
     skills: [
       {
         title: "I'm proficient and actively working with",
         list: [
           {
-            name: "language",
+            name: "languages",
             data: ["javascript", "typescript"],
           },
           {
-            name: "frontend",
-            data: ["reactJS", "nextJS"],
-          },
-          {
-            name: "state-management",
-            data: ["redux", "react-query"],
+            name: "frameworks",
+            data: ["reactJS", "nextJS", "GSAP", "redux-toolkit", "react-query"],
           },
           {
             name: "styling",
-            data: ["CSS3", "tailwindCSS", "MUI"],
+            data: ["tailwindCSS", "CSS3", "MUI", "framer-motion"],
           },
-          // {
-          //   name: "database",
-          //   data: ["firebase", "graphql"],
-          // },
-          // { name: "animation", data: ["GSAP"] },
-          { name: "others", data: ["git", "GSAP"] },
+          {
+            name: "tools",
+            data: [
+              "git",
+              "github-actions",
+              "vite",
+              "webpack",
+              "figma",
+              "vercel",
+              "REST APIs",
+            ],
+          },
         ],
       },
     ],
@@ -85,61 +86,96 @@ const app: IApp = {
     tag: "experience",
     experiences: [
       {
-        companyName: "Muzzlab Technologies",
-        companyLink: "https://www.muzzlabtech.com/",
-        duration: "July 2023 - present",
+        companyName: "ExodusAvia Group",
+        companyLink: "",
+        duration: "August 2025 - present",
         jobTitle: "Frontend Engineer",
         workDone: [
-          "⁠Played a key role in the successful development of a web application to automate manual processes enabling users to fill forms, make payments, and provide feedback. This greatly optimised operational efficiency and ensured high availability and reliability of services for users and administrators.",
-          "Implemented features such as authentication, team management, and multi-stage due diligence processes. This included complex workflows for due diligence stages, such as request forms, online meetings, payment processing, NDA forms, and extensive questionnaires with file uploads.",
-          "⁠Utilised Redux Toolkit & React Query for state management, optimising data flow and maintaining application scalability.",
-          "Partnered with stakeholders to gather requirements, iterate on designs, and deliver solutions that effectively meet business objectives and user needs",
-          "Contributed to enhancing the overall application architecture, code quality, and deployment processes, fostering a culture of continuous improvement within the development team.",
+          "Led frontend development across a suite of 5 aviation management apps — restructured the architecture, replaced all mock data with live API integrations, and implemented authentication end-to-end in collaboration with the backend engineers.",
+          "Integrated REST APIs across all apps covering real-time chat, push notifications, calendar and timeline views, role-based user management, and full CRUD operations.",
+          "Iterated through multiple client demo cycles, progressively resolving bugs and hardening the platform toward airline onboarding readiness.",
+          "Delivered consistent UI/UX improvements based on stakeholder feedback, maintaining design coherence across 5 distinct user-facing products.",
+        ],
+      },
+      {
+        companyName: "GoPrudy",
+        companyLink: "",
+        duration: "February 2025 - September 2025",
+        jobTitle: "Frontend Engineer (Contract)",
+        workDone: [
+          "Built core frontend features for a budgeting SaaS platform with AI-driven financial dashboards, transaction tracking, and receipt scanning functionality.",
+          "Improved UI performance and reduced data-fetching latency by 40% by migrating to React Query with smart caching and background sync strategies.",
+          "Integrated AI features to enhance predictive financial analysis, delivering personalised spending insights to users.",
+          "Implemented GSAP-powered micro-animations that enhanced perceived performance and overall product polish.",
+        ],
+      },
+      {
+        companyName: "Muzzlab Technologies",
+        companyLink: "https://www.muzzlabtech.com/",
+        duration: "July 2023 - January 2025",
+        jobTitle: "Frontend Engineer",
+        workDone: [
+          "Developed a real-time car rental booking system with live inventory updates and payment gateway integration for Autogirl & Muvement.",
+          "Built multi-step due diligence workflows (NDAs, payments, questionnaires) for GACN, automating previously manual processes and cutting admin task time by 60%.",
+          "Collaborated with product and design stakeholders, iterating rapidly from Figma to production to deliver scalable frontend solutions across two major products.",
+          "Drove code quality improvements by refactoring core modules and establishing component standards adopted across the team.",
         ],
       },
       {
         companyName: "3RM",
         companyLink: "",
         duration: "November 2022 - May 2023",
-        jobTitle: "Frontend Engineer",
+        jobTitle: "Frontend Engineer (Contract)",
         workDone: [
-          "Worked closely with team members at 3RM to implement a scalable architecture and develop a Telegram Relationship Manager, enhancing web3 organisations' ability to manage interactions on the Telegram platform more effectively.",
-          "Developed and maintained flawless integration of Telegram into the company's website, introducing essential features such as Telegram syncing, follow-up assignment, and conversation tracking.",
-          "Transformed mockups and wireframes into well polished, functional and responsive web pages, ensuring cross-browser compatibility and delivering a smooth, visually appealing user experience.",
-          "Enhanced website performance by implementing advanced code optimization techniques and utilising caching mechanisms, resulting in faster load times and significantly improved overall user experience.",
-          "Demonstrated remarkable efficiency and time management skills in a fully remote role, showcasing the ability to work independently and deliver high-quality results without requiring close supervision.",
+          "Built a scalable Telegram Relationship Manager for Web3 organizations, enabling real-time sync, follow-up assignment, and conversation tracking across thousands of chats.",
+          "Translated Figma designs pixel-perfectly into responsive UIs, ensuring cross-browser compatibility and improving UX consistency across platforms.",
+          "Boosted site load performance by 30% through aggressive caching and React code optimization.",
         ],
       },
       {
         companyName: "Metadapp",
         companyLink: "",
-        duration: "September 2021 - March 2023",
+        duration: "June 2022 - March 2023",
         jobTitle: "Frontend Developer",
         workDone: [
-          "Spearheaded the implementation of features such as Risk Management, Portfolio Management, Referral System, and Revoke Approval within the Metadapp web3 application.",
-          "Optimised the entire codebase by meticulously improving and refactoring legacy code to adhere to null-safety and modern standards, resulting in better performance and an improved development experience.",
-          "Collaborated effectively with team members to maintain the Metadapp Web3 dashboard, ensuring a seamless user experience and efficient presentation of information.",
-          "Integrated GraphQL APIs, various third-party services, and Web3 APIs to elevate website functionality and enable efficient data retrieval, thereby enhancing overall user engagement.",
-          "Conducted thorough testing and debugging protocols, quickly identifying and resolving frontend codebase issues to ensure a robust and error-free application.",
+          "Delivered core Web3 features: Risk Management, Portfolio Management, Referral System, and Revoke Approval within a live DeFi dashboard.",
+          "Integrated GraphQL APIs, Web3 APIs, and third-party services to enable efficient on-chain data retrieval and real-time updates.",
+          "Reduced bug reports by 30% through systematic legacy code refactoring and stricter TypeScript typings.",
         ],
       },
-      // {
-      //   companyName: "Xigma",
-      //   companyLink: "",
-      //   duration: "April 2021 - August 2021",
-      //   jobTitle: "Frontend Developer Intern",
-      //   workDone: [
-      //     "Led the design and implementation of the solar service website, enabling users to purchase solar services and equipment from home while providing solar tips to enhance engagement and effectively promote solar services.",
-      //     "Designed the mobile interface to ensure a seamless, user-friendly and visually appealing experience for users accessing the solar service on their mobile devices.",
-      //     "Initiated and led a training program for a cohort of 10 interns, delivering a comprehensive introduction to frontend development that fostered a collaborative learning environment and boosted team skill development.",
-      //   ],
-      // },
     ],
   },
 
   project: {
     tag: "project",
     deskTopProjects: [
+      {
+        title: "ExodusAvia",
+        tags: ["react", "nextjs", "rest-api", "real-time", "NDA"],
+        desc: "Suite of 5 aviation management apps — live API integrations, end-to-end auth, real-time chat & role-based access. Private, under NDA.",
+        imgUrl: "assets/images/Screenshot-Exodusavia.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.exodusavia.com",
+            tooltip: "View the web",
+          },
+        ],
+      },
+      {
+        title: "Metadapp",
+        tags: ["react", "MUI", "Web3"],
+        desc: "An all in one Web3 dashboard",
+        imgUrl: "assets/images/Screenshot-Metadapp.png",
+
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://metadapp.com",
+            tooltip: "View the web",
+          },
+        ],
+      },
       {
         title: "Caveat Emptor",
         tags: ["nextjs", "tailwind"],
@@ -167,17 +203,16 @@ const app: IApp = {
         ],
       },
       {
-        title: "Metadapp",
-        tags: ["react", "MUI", "Web3"],
-        desc: "An all in one Web3 dashboard",
-        imgUrl: "assets/images/Screenshot-Metadapp.png",
-
+        title: "GoPrudy",
+        tags: ["nextjs", "react-query", "GSAP", "AI"],
+        desc: "AI-driven budgeting SaaS — financial dashboards, receipt scanning, and predictive spending insights.",
+        imgUrl: "assets/images/Screenshot-Goprudy.png",
         links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://metadapp.com",
-            tooltip: "View the web",
-          },
+          // {
+          //   icon: <Globe size={24} />,
+          //   url: "https://www.goprudy.com/",
+          //   tooltip: "View the web",
+          // },
         ],
       },
 
@@ -237,19 +272,19 @@ const app: IApp = {
       //   ],
       // },
 
-      {
-        title: "Feastpass",
-        tags: ["nextjs", "tailwind"],
-        desc: "Your Cities Food Guide",
-        imgUrl: "assets/images/Screenshot-Feastpass.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://www.feastpasshq.com/",
-            tooltip: "View the web",
-          },
-        ],
-      },
+      // {
+      //   title: "Feastpass",
+      //   tags: ["nextjs", "tailwind"],
+      //   desc: "Your Cities Food Guide",
+      //   imgUrl: "assets/images/Screenshot-Feastpass.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://www.feastpasshq.com/",
+      //       tooltip: "View the web",
+      //     },
+      //   ],
+      // },
 
       {
         title: "Advice App",
@@ -374,6 +409,32 @@ const app: IApp = {
     ],
     projects: [
       {
+        title: "ExodusAvia",
+        tags: ["react", "nextjs", "rest-api", "real-time", "NDA"],
+        desc: "Suite of 5 aviation management apps — live API integrations, end-to-end auth, real-time chat & role-based access. Private, under NDA.",
+        imgUrl: "assets/images/Screenshot-Exodusavia.png",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://www.exodusavia.com",
+            tooltip: "View the web",
+          },
+        ],
+      },
+      {
+        title: "GoPrudy",
+        tags: ["nextjs", "react-query", "GSAP", "AI"],
+        desc: "AI-driven budgeting SaaS — financial dashboards, receipt scanning, and predictive spending insights.",
+        imgUrl: "assets/images/Screenshot-Goprudy.png",
+        links: [
+          // {
+          //   icon: <Globe size={24} />,
+          //   url: "https://www.goprudy.com/",
+          //   tooltip: "View the web",
+          // },
+        ],
+      },
+      {
         title: "Caveat Emptor",
         tags: ["nextjs", "tailwind"],
         desc: "Vernacular Design Archive",
@@ -399,19 +460,19 @@ const app: IApp = {
           },
         ],
       },
-      {
-        title: "Feastpass",
-        tags: ["nextjs", "tailwind"],
-        desc: "Your Cities Food Guide",
-        imgUrl: "assets/images/Screenshot-Feastpass.png",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://www.feastpasshq.com/",
-            tooltip: "View the web",
-          },
-        ],
-      },
+      // {
+      //   title: "Feastpass",
+      //   tags: ["nextjs", "tailwind"],
+      //   desc: "Your Cities Food Guide",
+      //   imgUrl: "assets/images/Screenshot-Feastpass.png",
+      //   links: [
+      //     {
+      //       icon: <Globe size={24} />,
+      //       url: "https://www.feastpasshq.com/",
+      //       tooltip: "View the web",
+      //     },
+      //   ],
+      // },
 
       {
         title: "GACN",

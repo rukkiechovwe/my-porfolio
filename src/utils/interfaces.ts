@@ -2,7 +2,6 @@ export interface IHero {
   tag?: string;
   name: string;
   catchPhrase: string;
-  text: string;
   desc: string;
   greeting: string;
 }

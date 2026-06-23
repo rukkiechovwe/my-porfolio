@@ -8,7 +8,7 @@ export const SButton = styled.button<IButton>`
   justify-content: space-evenly;
   font-size: 16px;
   border-radius: 0.5rem;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   border: none;
   min-height: 50px;
   min-width: ${(props) => props.width || "178px"};
@@ -20,6 +20,10 @@ export const SButton = styled.button<IButton>`
     cursor: pointer;
     color: ${(props) => props.theme.buttonHoverTextColor};
     background-color: ${(props) => props.theme.buttonHoverColor};
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding: 0 1.5rem;
   }
 `;
 

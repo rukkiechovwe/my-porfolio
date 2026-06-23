@@ -13,7 +13,7 @@ type HeroProps = {
 };
 
 const Hero: React.FC<HeroProps> = ({
-  hero: { text, desc, greeting, catchPhrase },
+  hero: { desc, greeting, catchPhrase },
 }) => {
   const router = useRouter();
 
@@ -86,19 +86,6 @@ const Hero: React.FC<HeroProps> = ({
         </ColoredText>
       </S.Greetings>
       <S.HeaderText>
-        {text.split("").map((text, i) => {
-          return text === " " ? (
-            <span className="name" key={i}>
-              {" "}
-            </span>
-          ) : (
-            <S.NameLetters className="name" key={i}>
-              {text}
-            </S.NameLetters>
-          );
-        })}
-      </S.HeaderText>
-      <S.HeaderText>
         {catchPhrase.split("").map((text, i) => {
           return text === " " ? (
             <span className="name" key={i}>
@@ -111,15 +98,7 @@ const Hero: React.FC<HeroProps> = ({
           );
         })}
       </S.HeaderText>
-      {/* <S.DescText>
-        <ColoredText>
-          {desc.split("").map((text, i) => (
-            <span className="desc" key={i}>
-              {text}
-            </span>
-          ))}
-        </ColoredText>
-      </S.DescText> */}
+      <S.DescText>{desc}</S.DescText>
 
       <ScrollTo link="about" />
     </S.Container>

@@ -42,26 +42,23 @@ export const ResumeContainer = styled.div`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
 
   @media only screen and (min-width: 600px) {
-    display: grid;
-    grid-template: 1fr 1fr / 50% 50%;
     gap: 20px;
   }
 
   @media only screen and (min-width: 768px) {
-    display: none;
+    flex-direction: row;
   }
 `;
 
 export const ButtonWrapper = styled.div`
-  margin: 10px 0;
-  width: 50%;
+  width: fit-content;
 
   @media only screen and (min-width: 600px) {
     margin: 0;
-    width: fit-content;
   }
 `;
 

@@ -22,12 +22,16 @@ const Project: React.FC<ProjectProps> = ({
         {projects.map((item, i) => (
           <S.Project key={i} url={item.imgUrl}>
             <div className="project-desc">
-              <Link href={item.links[0].url} target="_blank">
-                <S.TitleText>
-                  {item.title}
-                  <ArrowUpRight size={22} />
-                </S.TitleText>
-              </Link>
+              {item.links.length > 0 ? (
+                <Link href={item.links[0].url} target="_blank">
+                  <S.TitleText>
+                    {item.title}
+                    <ArrowUpRight size={22} />
+                  </S.TitleText>
+                </Link>
+              ) : (
+                <S.TitleText>{item.title}</S.TitleText>
+              )}
               <S.DescText>{item.desc}</S.DescText>
 
               <S.TagRow>
@@ -35,17 +39,19 @@ const Project: React.FC<ProjectProps> = ({
                   <S.Tag key={[tag, i].join(".")}>{tag}</S.Tag>
                 ))}
               </S.TagRow>
-              <S.Icons>
-                {item.links.map((link, i) => (
-                  <S.IconText
-                    key={[link.url, i].join(".")}
-                    href={link.url}
-                    target="_blank"
-                  >
-                    <Tooltip text={link.tooltip}>{link.icon}</Tooltip>
-                  </S.IconText>
-                ))}
-              </S.Icons>
+              {item.links.length > 0 && (
+                <S.Icons>
+                  {item.links.map((link, i) => (
+                    <S.IconText
+                      key={[link.url, i].join(".")}
+                      href={link.url}
+                      target="_blank"
+                    >
+                      <Tooltip text={link.tooltip}>{link.icon}</Tooltip>
+                    </S.IconText>
+                  ))}
+                </S.Icons>
+              )}
             </div>
           </S.Project>
         ))}
@@ -54,12 +60,16 @@ const Project: React.FC<ProjectProps> = ({
         {deskTopProjects.map((item, i) => (
           <S.Project key={i} url={item.imgUrl}>
             <div className="project-desc">
-              <Link href={item.links[0].url} target="_blank">
-                <S.TitleText>
-                  {item.title}
-                  <ArrowUpRight size={22} />
-                </S.TitleText>
-              </Link>
+              {item.links.length > 0 ? (
+                <Link href={item.links[0].url} target="_blank">
+                  <S.TitleText>
+                    {item.title}
+                    <ArrowUpRight size={22} />
+                  </S.TitleText>
+                </Link>
+              ) : (
+                <S.TitleText>{item.title}</S.TitleText>
+              )}
               <S.DescText>{item.desc}</S.DescText>
 
               <S.TagRow>
@@ -67,17 +77,19 @@ const Project: React.FC<ProjectProps> = ({
                   <S.Tag key={[tag, i].join(".")}>{tag}</S.Tag>
                 ))}
               </S.TagRow>
-              <S.Icons>
-                {item.links.map((link, i) => (
-                  <S.IconText
-                    key={[link.url, i].join(".")}
-                    href={link.url}
-                    target="_blank"
-                  >
-                    <Tooltip text={link.tooltip}>{link.icon}</Tooltip>
-                  </S.IconText>
-                ))}
-              </S.Icons>
+              {item.links.length > 0 && (
+                <S.Icons>
+                  {item.links.map((link, i) => (
+                    <S.IconText
+                      key={[link.url, i].join(".")}
+                      href={link.url}
+                      target="_blank"
+                    >
+                      <Tooltip text={link.tooltip}>{link.icon}</Tooltip>
+                    </S.IconText>
+                  ))}
+                </S.Icons>
+              )}
             </div>
           </S.Project>
         ))}

@@ -1,8 +1,8 @@
+import { EnvelopeSimple } from "phosphor-react";
 import { IContact } from "../../utils/interfaces";
 import { AnchorButton } from "../Button";
 import * as S from "./styles";
 import { FloatText, ColoredText } from "../../styles/commonstyles";
-
 
 type Props = {
   contact: IContact;
@@ -32,9 +32,15 @@ const Contact: React.FC<Props> = ({ contact: { tag, email, urls } }) => {
             </AnchorButton>
           </S.ButtonWrapper>
         ))}
+        <S.ButtonWrapper>
+          <AnchorButton width="124px" href={`mailto:${email}`}>
+            <EnvelopeSimple size={22} />
+            Email
+          </AnchorButton>
+        </S.ButtonWrapper>
       </S.ButtonContainer>
 
-      <S.ResumeContainer>
+      {/* <S.ResumeContainer>
         {urls.map(
           ({ icon, url, title }, i) =>
             title === "Resume" && (
@@ -44,9 +50,9 @@ const Contact: React.FC<Props> = ({ contact: { tag, email, urls } }) => {
                   {title}
                 </AnchorButton>
               </S.ButtonWrapper>
-            )
+            ),
         )}
-      </S.ResumeContainer>
+      </S.ResumeContainer> */}
     </S.CContainer>
   );
 };

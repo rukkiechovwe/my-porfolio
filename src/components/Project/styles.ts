@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ITheme } from "../../utils/interfaces";
 import { Container } from "../../styles/commonstyles";
 
@@ -47,42 +47,35 @@ export const Project = styled.div<IProject>`
   justify-content: end;
   padding: 10px 20px;
   border-radius: 5px;
-  // border: ${(props) => props.theme.borderColor};
   background: url(${(props) => props.url});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: ${(props) => (props.theme as ITheme).buttonColor};
   position: relative;
   overflow: hidden;
 
-  ::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00000036;
-    z-index: 1;
-    border-radius: 5px;
-    background: #00000052;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.86) 0%,
-      rgba(0, 0, 0, 0.094) 92%,
-      rgba(0, 0, 0, 0.094) 100%
-    );
-  }
-
-  &:hover::after {
-    background: #00000052;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.86) 0%,
-      rgba(0, 0, 0, 0.094) 92%,
-      rgba(0, 0, 0, 0.094) 100%
-    );
-  }
+  ${(props) =>
+    props.url &&
+    css`
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 5px;
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.86) 0%,
+          rgba(0, 0, 0, 0.5) 40%,
+          rgba(0, 0, 0, 0.094) 85%,
+          rgba(0, 0, 0, 0.094) 100%
+        );
+      }
+    `}
 
   .project-desc {
     z-index: 2;
