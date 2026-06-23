@@ -4,6 +4,8 @@ export const lightTheme: ITheme = {
   bgColor: "#fff",
   buttonColor: "rgba(203, 203, 203, 0.2)",
   buttonPrimaryColor: "#00b968",
+  buttonHoverColor: "#00b968",
+  buttonHoverTextColor: "#fff",
   headerTextColor: "#111",
   textColor: "grey",
   highlightTextColor: "#00b968",
